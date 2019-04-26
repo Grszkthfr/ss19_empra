@@ -1,0 +1,20 @@
+.Rhistory
+.Rproj.user
+
+# ignore files startging with
+students/*
+_*
+
+# ignore slides/libs
+slides/libs/*
+
+# ignore experimental documents
+material/
+
+# ignore power simulation
+material/
+
+# ignore .omv
+
+# ignore links
+*.lnk
