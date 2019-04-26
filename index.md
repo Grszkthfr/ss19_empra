@@ -2,9 +2,9 @@ Allgemeines
 -----------
 
 Hier solltet ihr alle Informationen finden, die wir im Laufe des
-Semesters benÃ¶tigen.
+Semesters benötigen.
 
-Erreichen kÃ¶nnt ihr
+Erreichen könnt ihr
 [mich](http://www.i1.psychologie.uni-wuerzburg.de/ekp/personen/jonas-grossekathoefer/msc-jonas-grossekathoefer/){:target="\_blank"}
 am besten per Mail: <jonas.grossekathoefer@uni-wuerzburg.de>.
 
@@ -12,15 +12,15 @@ Die aktuelle Modulbeschreibung findet ihr
 [hier](https://www2.uni-wuerzburg.de/mhb/MB-de-06-PSY-EFM-152-m01.pdf){:target="\_blank"}.
 
 Informationen zu den verschiedenen Plattformen, die im Laufe des
-Semesters benÃ¶tigt werden, findet ihr [hier](material/account.html).
+Semesters benötigt werden, findet ihr [hier](material/account.html).
 
-[PrÃ¼fungsanmeldung](https://www-sbhome1.zv.uni-wuerzburg.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=201046&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung){:target="\_blank"}
+[Prüfungsanmeldung](https://www-sbhome1.zv.uni-wuerzburg.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=201046&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung){:target="\_blank"}
 bei Albrecht Sebald (Gruppe 1) nicht vergessen!
 
 ### Sitzungen
 
 Die Sitzungen finden **Montags**, von **14.15h bis 15.45h**, im **Raum
-213** der MarcusstraÃŸe 9-11, statt.
+213** der Marcusstraße 9-11, statt.
 
 | Nr. |      Termin     | Thema                                                            |
 |:---:|:---------------:|:-----------------------------------------------------------------|
@@ -38,7 +38,7 @@ Die Sitzungen finden **Montags**, von **14.15h bis 15.45h**, im **Raum
 |  09 |  15\. Juli 2019 |                                                                  |
 |  10 |  22\. Juli 2019 |                                                                  |
 
-letzte Aktualisierung: 26. Apr 2019, 16:20:58
+letzte Aktualisierung: 26. Apr 2019, 16:21:52
 
 ### Lizenz
 
