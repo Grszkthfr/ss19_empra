@@ -17,9 +17,10 @@ Die aktuelle Modulbeschreibung findet ihr
 [hier](https://www2.uni-wuerzburg.de/mhb/MB-de-06-PSY-EFM-152-m01.pdf){:target="_blank"}.
 
 Informationen zu den verschiedenen Plattformen, die im Laufe des
-Empras benötigt werden, findet ihr [hier](material/account.html).
+Semesters benötigt werden, findet ihr [hier](material/account.html).
 
 [Prüfungsanmeldung](https://www-sbhome1.zv.uni-wuerzburg.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=201046&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung){:target="_blank"} bei Albrecht Sebald (Gruppe 1) nicht vergessen!
+
 ### Sitzungen
 
 Die Sitzungen finden **Montags**, von **14.15h bis 15.45h**, im **Raum
