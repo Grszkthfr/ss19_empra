@@ -6,6 +6,14 @@ Sitzungsdatum: 29-04.2019
 
 ### Wissenschaft ###
 
++ bla
++ bla
++ bla
+
 ### Ideengenerierung ###
+
+| eine | Tabelle | funktioniert | auch |
+|------|---------|--------------|------|
+| man muss| halt | wissen | wie |
 
 ## Aufgaben ##
