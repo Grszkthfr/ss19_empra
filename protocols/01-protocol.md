@@ -6,8 +6,6 @@ Sitzungsdatum: 29.04.2019
 
 ### 1. Thema ###
 
-###### test 
-
 + bla
 + bla
 + bla
