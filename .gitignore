@@ -6,13 +6,7 @@ students/*
 _*
 
 # ignore slides/libs
-slides/libs/*
-
-# ignore experimental documents
-material/
-
-# ignore power simulation
-material/
+#slides/libs/*
 
 # ignore .omv
 

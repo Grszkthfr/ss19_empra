@@ -1,20 +1,24 @@
 # Protokol Sitzung 01 #
 
-Sitzungsdatum: 29-04.2019
+Sitzungsdatum: 29.04.2019
 
 ## Themen ##
 
-### Wissenschaft ###
+### 1. Thema ###
 
 + bla
 + bla
 + bla
 
-### Ideengenerierung ###
+### 2. Thema ###
 
-| eine | Tabelle | funktioniert | auch |
-|:------:|:---------:|:--------------:|:------:|
-| man  |muss| halt | wissen | 
-|||||
+| Eine | Tabelle | funktioniert | auch   |
+|:----:|:-------:|:------------:|:------:|
+| man  | muss    | halt         | wissen |
+| wie  |         |              |        |
 
 ## Aufgaben ##
+
+1. erste **bla**
+2. zweite *bla*
+3. letzte ~~bla~~

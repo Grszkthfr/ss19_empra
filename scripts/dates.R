@@ -5,15 +5,19 @@ library(tidyverse)
 library(knitr)
 library(kableExtra) ## for "Awesome HTML Table with knitr::kable"
 
-###17 Sitzungen (inkl. Vorlesungsfreitage/ -zeit)
+### 13 Sitzungen (inkl. Vorlesungsfreitage/ -zeit)
 Sitzung <- c(1:13)
 
 ### Daten für jede Sitzung
 Termin <- c()
 
+### für jede Sitzung
 for (i in Sitzung){
-    ### from first date
+    
+    ### einen Tag hinzufügen, beginnend von der ersten Sitzung
     Tag <- (as.Date("2019-04-29") + (i*7-7)) %>% format("%d. %B %Y")
+    
+    ### den Tag dem Termin hinzufügen
     Termin <- c(Termin, Tag)
 }
 
@@ -22,7 +26,8 @@ for (i in Sitzung){
 Thema <- c(
 
     ### Sitzung 1
-    'Orga, Kennenlernen, Wissenschaft, [Folien](/slides/01-orga.html)',
+    # Inhalt
+    'Orga, Kennenlernen, Wissenschaft, [Folien](/slides/01-orga.html), [Protokoll](/protocols/01-protocol.html)',
 
     ### Sitzung 2
     '',
@@ -98,8 +103,12 @@ sitzung_html <-
     ### delete link to other slides in html table
     mutate(
         Thema = ifelse(
-            str_detect(Thema, "Folien"),
-            str_extract(Thema, ".+?(?=, \\[Folien\\])"),
+            
+            # when pattern is found
+            str_detect(string=Thema, pattern="Folien"),
+            
+            # extracts (deletes) everything following the pattern
+            str_extract(string=Thema, pattern=".+?(?=, \\[Folien\\])"),
             as.character(Thema))) %>%
 
     kable(

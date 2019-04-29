@@ -114,9 +114,19 @@ Hier beginnen die Notizen
 +   intern: [Files (Uni Würzburg)](https://files.uni-wuerzburg.de)
     +   Für den internen Austausch
 
-???
+--
 
-Wie machen andere das, und machen die das gut?
+### Protokolle
+
++    Jede Sitzung fertig einer ein Protokoll an
+    +  Inhalt: Was wurde besprochen? Was sind die Aufgaben?
++  Protokolle sind [hier](https://grszkthfr.github.io/ss19_empra/protocols/01-protocol.html) einzusehen
+    + Die Quelldatei ([hier (lokal)](file:///C:/Users/jog54yy/Documents/Lehre/ss19_empra/protocols/01-protocol.md)
+      bzw. [hier (auf osf.io)](https://osf.io/gqa6e/?show=edit)) ist
+      eine [*markdown*](https://de.wikipedia.org/wiki/Markdown)-Datei
+      (Dateiendung i.d.R. ".md") 
+
+???
 
 ---
 
@@ -226,23 +236,23 @@ deduktiv: Vom Allgemeinen
 
 1.  Analyze your own experience
 2.  Use case studies
-3.  Collect practioniers' rules of thumb
+3.  Collect practitioners' rules of thumb
 4.  Use role playing
 5.  Conduct a thought experiment
 6.  Engage in participant observation
 7.  Analyze paradoxical incidents
 8.  Engage in imaging
-9.  Use analogies and methaphors
-10. Reframe the problem in terms of the opposite
+9.  Use analogies and metaphors
+10. Re frame the problem in terms of the opposite
 11. Apply deviant case analysis
 12. Change the scale
 13. Focus on process or focus on variables
 14. Consider abstractions or specific instances
 15. Make the opposite assumption
 16. Apply the continual why and what
-17. Consulut your grandmother - and prove her wrong
-18. Push an establisheed finding to the extreme
-19. Read biographies and liteature, and be a well-rounded media consumer
+17. Consult your grandmother - and prove her wrong
+18. Push an established finding to the extreme
+19. Read biographies and literature, and be a well-rounded media consumer
 20. Identify remote and shared/differentiating associates
 21. Shift the unit of analysis
 22. Shift the level of analysis
@@ -267,9 +277,11 @@ deduktiv: Vom Allgemeinen
 class: inverse, center, middle
 
 ## Für nächste Woche:
-+   Account bei [osf.io](https://osf.io/register) erstellen
-    +   dem [Projekt beitreten](https://osf.io/9axfe/)
-+   Studienideen überlegen.
++   Account bei [`r icon::ai_osf()`](https://osf.io/register) erstellen
+    +   [Projekt beitreten](https://osf.io/9axfe/)
++   Studienideen?
+    +   Eine *Methode* aussuchen
+    +   3 - 4 Ideen mitbringen
 
 --
 
