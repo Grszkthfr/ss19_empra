@@ -13,23 +13,17 @@ output:
       countIncrementalSlides: false
 
 ---
-class: inverse, center, middle
 
 ```{r setup, include=FALSE}
 
 options(htmltools.dir.version = FALSE)
 
-library(tidyverse)
-library(kableExtra)
-
 ### Sitzungen
 source("../scripts/dates.R", encoding = "UTF-8")
 
+random_color = sample(colours(distinct = TRUE), 1)
+
 ```
-
-# Orga
-
----
 
 ## Zu mir
 
@@ -63,12 +57,26 @@ source("../scripts/dates.R", encoding = "UTF-8")
 
 + Name, Semester, Mail?
 
+???
+
+aufschreiben
+
 --
 
 +   [Prüfungsleistung](https://www2.uni-wuerzburg.de/mhb/MB-de-06-PSY-EFM-152-m01.pdf)<sup>1</sup>
     +   Erstellung eines wissenschaftlichen Posters
     +   Teilnahme am Posterkongress
     +   Individuelle Präsentation etwa 10 Minuten, benotet
+
+.footnote[
+
+<sup>1</sup> Für Studierende, die ab WS15/16 immatrikuliert sind.
+
+]
+
+--
+
+<iframe src="https://giphy.com/embed/9CoKSiJADd7Wg" width="240" height="138" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 .footnote[
 
@@ -101,8 +109,10 @@ Hier beginnen die Notizen
 +   öffentlich: [Open Science Framework](https://www.osf.io/)
     +   Für alles was von öffentlichem Interesse ist.
     +   Projekt *existiert* [bereits](https://osf.io/9axfe/)
+        +   [anmelden](https://osf.io/register/) `r icon::fa_arrow_right()`
+            *request access* `r icon::fa_arrow_right()` loslegen 
 +   intern: [Files (Uni Würzburg)](https://files.uni-wuerzburg.de)
-    +   Für den Austausch von unserem Zeug
+    +   Für den internen Austausch
 
 ???
 
@@ -125,6 +135,8 @@ class: middle, center, inverse
 
 ## Wissenschaft
 
+.footnote[aus Jaccard & Jacoby, 2009]
+
 --
 
 +   Ansatz zum Verstehen der Welt
@@ -136,8 +148,6 @@ class: middle, center, inverse
 
 `r icon::fa_arrow_right()` *befriedigende* Ansätze zur Abstraktion und
 Bewältigung der Welt
-
-.footnote[aus Jaccard & Jacoby, 2009]
 
 --
 
@@ -177,8 +187,7 @@ Teils Jahrtausende alte Perspektiven
 
 <p><a href="https://commons.wikimedia.org/wiki/File:Empirical_Cycle.svg#/media/File:Empirical_Cycle.svg"><img
 src="https://upload.wikimedia.org/wikipedia/commons/5/53/Empirical_Cycle.svg"
-alt="Empirical Cycle.svg" width="228" height="200"></a><br>
-
+width="342" height="300"></a>
 ]
 
 --
@@ -196,21 +205,9 @@ alt="Empirical Cycle.svg" width="228" height="200"></a><br>
 
 .footnote[
 
-By <a href="//commons.wikimedia.org/wiki/File:Empirical_Cycle.png"
-title="File:Empirical Cycle.png">Empirical_Cycle.png</a>:
-<a href="//commons.wikimedia.org/wiki/User:TesseUndDaan"
-title="User:TesseUndDaan">TesseUndDaan</a> derivative work:
-<a href="//commons.wikimedia.org/wiki/User:Beao"
-title="User:Beao">Beao</a>
-(<a href="//commons.wikimedia.org/wiki/User_talk:Beao" title="User
-talk:Beao"><span class="signature-talk">talk</span></a>) -
-<a href="//commons.wikimedia.org/wiki/File:Empirical_Cycle.png"
-title="File:Empirical Cycle.png">Empirical_Cycle.png</a>,
-<a href="https://creativecommons.org/licenses/by/3.0" title="Creative
-Commons Attribution 3.0">CC BY 3.0</a>,
-<a href="https://commons.wikimedia.org/w/index.php?curid=7968500">Link</a></p>
+aus: Reiß & Sarris, 2012
 
-aus: Reiß & Sarris, 2012 ]
+]
 
 ???
 
@@ -220,13 +217,59 @@ Problem der Induktiven Logik!
 deduktiv: Vom Allgemeinen
 (Einzelannahmen) auf das Spezielle --> valides Begründen
 
+---
+
+## 26 Heuristiken zur Ideengenerierung
+
+<font size="-1">
+.pull-left[
+
+1.  Analyze your own experience
+2.  Use case studies
+3.  Collect practioniers' rules of thumb
+4.  Use role playing
+5.  Conduct a thought experiment
+6.  Engage in participant observation
+7.  Analyze paradoxical incidents
+8.  Engage in imaging
+9.  Use analogies and methaphors
+10. Reframe the problem in terms of the opposite
+11. Apply deviant case analysis
+12. Change the scale
+13. Focus on process or focus on variables
+14. Consider abstractions or specific instances
+15. Make the opposite assumption
+16. Apply the continual why and what
+17. Consulut your grandmother - and prove her wrong
+18. Push an establisheed finding to the extreme
+19. Read biographies and liteature, and be a well-rounded media consumer
+20. Identify remote and shared/differentiating associates
+21. Shift the unit of analysis
+22. Shift the level of analysis
+23. Use both explanations rather then one or the other
+24. Capitalize on methodological and technological innovations
+25. Focus on your emotions
+26. What pushes your intellectual hot button?
+
+]
+</font>
+
+.pull-right[
+.center[
+`r icon::fa_rocket(size = 5) `
+]
+]
+.footnote[aus Jaccard & Jacoby, 2009, p.48-67]
+
 
 ---
 
 class: inverse, center, middle
 
 ## Für nächste Woche:
-+   *tba*
++   Account bei [osf.io](https://osf.io/register) erstellen
+    +   dem [Projekt beitreten](https://osf.io/9axfe/)
++   Studienideen überlegen.
 
 --
 
@@ -239,7 +282,7 @@ class: inverse, center, middle
 # Vielen Dank für Eure Aufmerksamkeit!
 ## Bis nächsten Montag.
 
-# :-)
+`r icon::fa_smile(size = 5, color = random_color)`
 
 .footnote[
 
