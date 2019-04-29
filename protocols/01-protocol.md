@@ -14,6 +14,6 @@ Sitzungsdatum: 29-04.2019
 
 | eine | Tabelle | funktioniert | auch |
 |------|---------|--------------|------|
-| man muss| halt | wissen | wie |
+| man  |muss| halt | wissen | 
 
 ## Aufgaben ##
