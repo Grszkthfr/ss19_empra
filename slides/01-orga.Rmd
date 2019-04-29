@@ -20,8 +20,7 @@ options(htmltools.dir.version = FALSE)
 
 ### Sitzungen
 source("../scripts/dates.R", encoding = "UTF-8")
-
-random_color = sample(colours(distinct = TRUE), 1)
+source("../scripts/random_color.R", encoding = "UTF-8")
 
 ```
 
@@ -294,7 +293,7 @@ class: inverse, center, middle
 # Vielen Dank für Eure Aufmerksamkeit!
 ## Bis nächsten Montag.
 
-`r icon::fa_smile(size = 5, color = random_color)`
+`r icon::fa_smile(size = 5, color = random_color())`
 
 .footnote[
 
