@@ -13,7 +13,8 @@ Sitzungsdatum: 29-04.2019
 ### Ideengenerierung ###
 
 | eine | Tabelle | funktioniert | auch |
-|------|---------|--------------|------|
+|:------:|:---------:|:--------------:|:------:|
 | man  |muss| halt | wissen | 
+|||||
 
 ## Aufgaben ##
