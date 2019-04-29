@@ -27,7 +27,7 @@ Thema <- c(
 
     ### Sitzung 1
     # Inhalt
-    'Orga, Kennenlernen, Wissenschaft, [Folien](/slides/01-orga.html), [Protokoll](/protocols/01-protocol.html)',
+    'Orga, Kennenlernen, Wissenschaft, [Folien](./slides/01-orga.html), [Protokoll](./protocols/01-protocol.html)',
 
     ### Sitzung 2
     '',
