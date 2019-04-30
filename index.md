@@ -11,9 +11,10 @@ Die aktuelle Modulbeschreibung findet ihr
 [hier](https://www2.uni-wuerzburg.de/mhb/MB-de-06-PSY-EFM-152-m01.pdf){:target="\_blank"}.
 
 Informationen zu den verschiedenen Plattformen, die im Laufe des
-Semesters benötigt werden, findet ihr [hier](material/account.html).
+Semesters benötigt werden, findet ihr
+[hier](material/account.html).
 
-OSF Projekt:
+![](https://s3.amazonaws.com/cloud.ohloh.net/attachments/88839/circle_logo_med.png):
 <https://osf.io/9axfe/>{:target="\_blank"}
 
 [Prüfungsanmeldung](https://www-sbhome1.zv.uni-wuerzburg.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=201046&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung){:target="\_blank"}
@@ -41,8 +42,8 @@ statt.
 | 09  | 15\. Juli 2019  |                                                                                                              |
 | 10  | 22\. Juli 2019  |                                                                                                              |
 
-letzte Aktualisierung: 29. Apr 2019,
-16:50:29
+letzte Aktualisierung: 30. Apr 2019,
+08:45:51
 
 ### Lizenz
 
