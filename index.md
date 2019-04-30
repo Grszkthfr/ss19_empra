@@ -14,7 +14,7 @@ Informationen zu den verschiedenen Plattformen, die im Laufe des
 Semesters benötigt werden, findet ihr
 [hier](material/account.html).
 
-<img src="https://s3.amazonaws.com/cloud.ohloh.net/attachments/88839/circle_logo_med.png" width="25" height="25" />:
+<img src="https://s3.amazonaws.com/cloud.ohloh.net/attachments/88839/circle_logo_med.png" width="14" height="14" />:
 <https://osf.io/9axfe/>{:target="\_blank"}
 
 [Prüfungsanmeldung](https://www-sbhome1.zv.uni-wuerzburg.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=201046&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung){:target="\_blank"}
@@ -43,7 +43,7 @@ statt.
 | 10  | 22\. Juli 2019  |                                                                                                              |
 
 letzte Aktualisierung: 30. Apr 2019,
-09:01:30
+10:40:07
 
 ### Lizenz
 
