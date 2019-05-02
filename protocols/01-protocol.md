@@ -23,7 +23,7 @@ Sitzungsdatum: 29.04.2019
 ---> befriedigende Ansätze zur Abstraktion und Bewältigung der Welt 
 
 - Universelle Grundlagen 
-    + Konzeote und Abhängigkeiten zwischen Konzepten 
+    + Konzepte und Abhängigkeiten zwischen Konzepten 
     + Limitation 
     + Präskriptiv und evaluativ 
 
