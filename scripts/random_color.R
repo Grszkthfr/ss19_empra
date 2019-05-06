@@ -1,8 +1,7 @@
 # generate random color
-# # random color
+# some colors seem to be not html/icon::wahtever compatible!
 
-
-random_color <- function(n_colors=2){
+random_color <- function(n_colors=1){
     colors = colors()
     
     sample(
