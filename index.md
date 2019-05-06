@@ -14,7 +14,7 @@ Informationen zu den verschiedenen Plattformen, die im Laufe des
 Semesters benötigt werden, findet ihr
 [hier](material/account.html).
 
-<img src="https://s3.amazonaws.com/cloud.ohloh.net/attachments/88839/circle_logo_med.png" width="14" height="14" />:
+<img src="https://s3.amazonaws.com/cloud.ohloh.net/attachments/88839/circle_logo_med.png" width="15" height="15" />
 <https://osf.io/9axfe/>{:target="\_blank"}
 
 [Prüfungsanmeldung](https://www-sbhome1.zv.uni-wuerzburg.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=201046&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung){:target="\_blank"}
@@ -29,7 +29,7 @@ statt.
 | Nr. |     Termin      | Thema                                                                                                        |
 | :-: | :-------------: | :----------------------------------------------------------------------------------------------------------- |
 | 01  | 29\. April 2019 | Orga, Kennenlernen, Wissenschaft, [Folien](./slides/01-orga.html), [Protokoll](./protocols/01-protocol.html) |
-| 02  |  06\. Mai 2019  |                                                                                                              |
+| 02  |  06\. Mai 2019  | Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html)                                |
 |     |  13\. Mai 2019  | Entfällt: Stiftungsfest                                                                                      |
 | 03  |  20\. Mai 2019  |                                                                                                              |
 | 04  |  27\. Mai 2019  |                                                                                                              |
@@ -42,8 +42,8 @@ statt.
 | 09  | 15\. Juli 2019  |                                                                                                              |
 | 10  | 22\. Juli 2019  |                                                                                                              |
 
-letzte Aktualisierung: 30. Apr 2019,
-10:40:07
+letzte Aktualisierung: 06. Mai 2019,
+12:10:39
 
 ### Lizenz
 
