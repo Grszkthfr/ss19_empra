@@ -21,7 +21,7 @@ Sitzungsdatum: 06.05.2019
     + Direct gaze als Auslöser von Fluchtverhalten nach Ellsworth
    
 
-### Versuchsaufbau ### 
+### Versuchsaufbau ###
 
 - Gütekriterien
     + Objektivität (Gleichbehandlung von allen Versuchspersonen)
