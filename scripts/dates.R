@@ -30,7 +30,7 @@ Thema <- c(
     'Orga, Kennenlernen, Wissenschaft, [Folien](./slides/01-orga.html), [Protokoll](./protocols/01-protocol.html)',
 
     ### Sitzung 2
-    'Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html)',
+    'Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html), [Protokoll](./protocols/02-protocol.html)',
 
     ### Sitzung 3
     'Entfällt: Stiftungsfest',

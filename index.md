@@ -26,24 +26,24 @@ Die Sitzungen finden **Montags**, von **14.15h bis 15.45h**, im **Raum
 213** der Marcusstraße 9-11,
 statt.
 
-| Nr. |     Termin      | Thema                                                                                                        |
-| :-: | :-------------: | :----------------------------------------------------------------------------------------------------------- |
-| 01  | 29\. April 2019 | Orga, Kennenlernen, Wissenschaft, [Folien](./slides/01-orga.html), [Protokoll](./protocols/01-protocol.html) |
-| 02  |  06\. Mai 2019  | Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html)                                |
-|     |  13\. Mai 2019  | Entfällt: Stiftungsfest                                                                                      |
-| 03  |  20\. Mai 2019  |                                                                                                              |
-| 04  |  27\. Mai 2019  |                                                                                                              |
-| 05  | 03\. Juni 2019  |                                                                                                              |
-|     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                          |
-|     | 17\. Juni 2019  | Entfällt: Konferenz                                                                                          |
-| 06  | 24\. Juni 2019  |                                                                                                              |
-| 07  | 01\. Juli 2019  |                                                                                                              |
-| 08  | 08\. Juli 2019  |                                                                                                              |
-| 09  | 15\. Juli 2019  |                                                                                                              |
-| 10  | 22\. Juli 2019  |                                                                                                              |
+| Nr. |     Termin      | Thema                                                                                                                    |
+| :-: | :-------------: | :----------------------------------------------------------------------------------------------------------------------- |
+| 01  | 29\. April 2019 | Orga, Kennenlernen, Wissenschaft, [Folien](./slides/01-orga.html), [Protokoll](./protocols/01-protocol.html)             |
+| 02  |  06\. Mai 2019  | Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html), [Protokoll](./protocols/02-protocol.html) |
+|     |  13\. Mai 2019  | Entfällt: Stiftungsfest                                                                                                  |
+| 03  |  20\. Mai 2019  |                                                                                                                          |
+| 04  |  27\. Mai 2019  |                                                                                                                          |
+| 05  | 03\. Juni 2019  |                                                                                                                          |
+|     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                      |
+|     | 17\. Juni 2019  | Entfällt: Konferenz                                                                                                      |
+| 06  | 24\. Juni 2019  |                                                                                                                          |
+| 07  | 01\. Juli 2019  |                                                                                                                          |
+| 08  | 08\. Juli 2019  |                                                                                                                          |
+| 09  | 15\. Juli 2019  |                                                                                                                          |
+| 10  | 22\. Juli 2019  |                                                                                                                          |
 
-letzte Aktualisierung: 06. Mai 2019,
-12:10:39
+letzte Aktualisierung: 13. Mai 2019,
+09:03:20
 
 ### Lizenz
 
