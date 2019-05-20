@@ -36,7 +36,7 @@ Thema <- c(
     'Entfällt: Stiftungsfest',
 
     ### Sitzung 4
-    'Präregistrierung, [Folien](.(slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)',
+    'Präregistrierung, [Folien](./slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)',
 
     ### Sitzung 5
     '',
