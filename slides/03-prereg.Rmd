@@ -1,0 +1,108 @@
+---
+title: "Einführung in empirische und experimentelle Forschungsmethoden"
+subtitle: "Gruppe 08"
+author: "Jonas Großekathöfer"
+date: "20.05.2019"
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "my-theme.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      #ratio: "16:9"
+
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(tidyverse)
+#library(kableExtra)
+library(knitr)
+
+### Sitzungen
+source("../scripts/dates.R", encoding = "UTF-8")
+source("../scripts/random_color.R", encoding = "UTF-8")
+farbe_der_woche = random_color()
+
+```
+
+
+[![](../slides/img/03_01_header-review.png)](https://doi.org/10.3389/fpsyg.2018.01587)
+
+---
+
+[![](../slides/img/02_01_header-article.png)](https://doi.org/10.1037/h0032323)
+
+---
+
+# Eigenes Projekt
+
+.right[
+
+
+]
+
+.center[
+
+`r icon::fa_vial(size=5, color = farbe_der_woche)`
+
+`r icon::fa_burn(size=5, color = "orange")`
+
+]
+
+---
+
+[![](https://aspredicted.org/images/aspredicted_penn_wharton.png)](https://aspredicted.org)
+
+siehe [hier](https://aspredicted.org/create.php)
+
+[![](https://osf.io/static/img/registries/osf-prereg-red.png)](https://cos.io/prereg/)
+
+siehe [hier](https://osf.io/9axfe/registrations?tab=drafts)
+
+
+---
+
+class: inverse
+
+## Für nächste Woche:
+
+
+
+???
+
++   Präregistrierung weiter bearbeiten
++   Design? Orte? Pilotieren? Hypothesen verbessern? Konkrete Umsetzung?
+    
+---
+class: inverse, center, middle
+
+# Noch Fragen?
+
+---
+
+class: inverse, center, middle
+
+`r icon::fa_smile(size = 5, color = farbe_der_woche)`
+
+Die Farbe der Woche ist `r farbe_der_woche`!
+
+--
+
+# Vielen Dank für Eure Aufmerksamkeit!
+
+
+## Bis nächsten Montag.
+
+--
+
+.footnote[
+
+<font size="-2">Slides created via the R packages [**xaringan**](https://github.com/yihui/xaringan) and [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.</font size>
+
+]

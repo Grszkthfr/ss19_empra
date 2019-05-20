@@ -31,7 +31,7 @@ statt.
 | 01  | 29\. April 2019 | Orga, Kennenlernen, Wissenschaft, [Folien](./slides/01-orga.html), [Protokoll](./protocols/01-protocol.html)             |
 | 02  |  06\. Mai 2019  | Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html), [Protokoll](./protocols/02-protocol.html) |
 |     |  13\. Mai 2019  | Entfällt: Stiftungsfest                                                                                                  |
-| 03  |  20\. Mai 2019  |                                                                                                                          |
+| 03  |  20\. Mai 2019  | Präregistrierung, \[Folien\](.(slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)                         |
 | 04  |  27\. Mai 2019  |                                                                                                                          |
 | 05  | 03\. Juni 2019  |                                                                                                                          |
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                      |
@@ -42,8 +42,8 @@ statt.
 | 09  | 15\. Juli 2019  |                                                                                                                          |
 | 10  | 22\. Juli 2019  |                                                                                                                          |
 
-letzte Aktualisierung: 13. Mai 2019,
-09:03:20
+letzte Aktualisierung: 20. Mai 2019,
+14:06:22
 
 ### Lizenz
 
