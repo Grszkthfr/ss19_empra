@@ -12,14 +12,13 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       #ratio: "16:9"
-
 ---
 
 ```{r setup, include=FALSE}
+
 options(htmltools.dir.version = FALSE)
 
 library(tidyverse)
-#library(kableExtra)
 library(knitr)
 
 ### Sitzungen
@@ -28,7 +27,6 @@ source("../scripts/random_color.R", encoding = "UTF-8")
 farbe_der_woche = random_color()
 
 ```
-
 
 [![](../slides/img/03_01_header-review.png)](https://doi.org/10.3389/fpsyg.2018.01587)
 
@@ -39,11 +37,6 @@ farbe_der_woche = random_color()
 ---
 
 # Eigenes Projekt
-
-.right[
-
-
-]
 
 .center[
 
@@ -63,14 +56,11 @@ siehe [hier](https://aspredicted.org/create.php)
 
 siehe [hier](https://osf.io/9axfe/registrations?tab=drafts)
 
-
 ---
 
 class: inverse
 
 ## Für nächste Woche:
-
-
 
 ???
 
@@ -83,7 +73,6 @@ class: inverse, center, middle
 # Noch Fragen?
 
 ---
-
 class: inverse, center, middle
 
 `r icon::fa_smile(size = 5, color = farbe_der_woche)`
@@ -93,7 +82,6 @@ Die Farbe der Woche ist `r farbe_der_woche`!
 --
 
 # Vielen Dank für Eure Aufmerksamkeit!
-
 
 ## Bis nächsten Montag.
 
