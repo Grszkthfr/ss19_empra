@@ -19,9 +19,9 @@ Sitzungsdatum: 27.05.2019
 ++ Temperatur °C
 *** Tageszeit (gleich große Kategorien)
 **** Wochentag
-+++++++ Dauer des Starrens (von stehen bleiben VP bis Schneiden mit Confed.)
--- Rollenverteilung (Confed, VL)
--- verworfen: Frequentierung der Ampel 
+###### Dauer des Starrens (von stehen bleiben VP bis Schneiden mit Confed.)
+#### Rollenverteilung (Confed, VL) ####
+##### verworfen: Frequentierung der Ampel #####
 
 ### Einwände ###
 
