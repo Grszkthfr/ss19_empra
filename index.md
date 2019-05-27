@@ -32,18 +32,18 @@ statt.
 | 02  |  06\. Mai 2019  | Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html), [Protokoll](./protocols/02-protocol.html) |
 |     |  13\. Mai 2019  | Entfällt: Stiftungsfest                                                                                                  |
 | 03  |  20\. Mai 2019  | Präregistrierung, [Folien](./slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)                           |
-| 04  |  27\. Mai 2019  |                                                                                                                          |
+| 04  |  27\. Mai 2019  | Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)                    |
 | 05  | 03\. Juni 2019  |                                                                                                                          |
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                      |
-|     | 17\. Juni 2019  | Entfällt: Konferenz                                                                                                      |
-| 06  | 24\. Juni 2019  |                                                                                                                          |
-| 07  | 01\. Juli 2019  |                                                                                                                          |
-| 08  | 08\. Juli 2019  |                                                                                                                          |
+| 06  | 17\. Juni 2019  | in Raum 204                                                                                                              |
+| 07  | 24\. Juni 2019  |                                                                                                                          |
+| 08  | 01\. Juli 2019  |                                                                                                                          |
+|     | 08\. Juli 2019  | Entfällt: Konferenz                                                                                                      |
 | 09  | 15\. Juli 2019  |                                                                                                                          |
 | 10  | 22\. Juli 2019  |                                                                                                                          |
 
-letzte Aktualisierung: 20. Mai 2019,
-14:08:34
+letzte Aktualisierung: 27. Mai 2019,
+14:10:55
 
 ### Lizenz
 

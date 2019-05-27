@@ -39,7 +39,7 @@ Thema <- c(
     'Präregistrierung, [Folien](./slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)',
 
     ### Sitzung 5
-    '',
+    'Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)',
 
     ### Sitzung 6
     '',
@@ -48,7 +48,7 @@ Thema <- c(
     'Entfällt: Pfingsten',
 
     ### Sitzung 8
-    'Entfällt: Konferenz',
+    'in Raum 204',
 
     ### Sitzung 9
     '',
@@ -57,7 +57,7 @@ Thema <- c(
     '',
 
     ### Sitzung 11: Weihnachten
-    '',
+    'Entfällt: Konferenz',
 
     ### Sitzung 12: Neujahr
     '',
