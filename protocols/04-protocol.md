@@ -11,16 +11,17 @@ Sitzungsdatum: 27.05.2019
 
 ### Variablen ###
 
-UV: Blickkontakt ja/nein
-AV: Geschwindigkeit Straßenüberquerung
-KV: Geschlecht
-    geschätzte Alterskategorie
-    Temperatur °C
-    Tageszeit (gleich große Kategorien)
-    Wochentag
-    Dauer des Starrens (von stehen bleiben VP bis Schneiden mit Confed.)
-    Rollenverteilung (Confed, VL)
-    * verworfen: Frequentierung der Ampel *
+- UV: Blickkontakt ja/nein
+- AV: Geschwindigkeit Straßenüberquerung
+- KV: 
+-- Geschlecht
+-- geschätzte Alterskategorie
+-- Temperatur °C
+-- Tageszeit (gleich große Kategorien)
+-- Wochentag
+-- Dauer des Starrens (von stehen bleiben VP bis Schneiden mit Confed.)
+-- Rollenverteilung (Confed, VL)
+-- verworfen: Frequentierung der Ampel 
 
 ### Einwände ###
 
