@@ -50,12 +50,6 @@ Sitzungsdatum: 27.05.2019
 - Poweranalyse vorbereiten
 
 ### Nici, Lena, Franzi ###
-- Ampeln auschecken
--- mind. 4-Spurig --
--- keine Inseln o.Ä. --
--- nicht Nähe Uni (Gefährdung Objektivität) --
--- nicht Nähe Bahnhof o.Ä. (Drittvariablen) --
+- Ampeln auschecken: mind. 4-Spurig, keine Inseln o.Ä., nicht Nähe Uni (Gefährdung Objektivität), nicht Nähe Bahnhof o.Ä. (Drittvariablen)
 
-- Präregistrierung vorbereiten
--- COS-Standard verwenden (ausdührlicher als "aspredicted") --
--- Google-File erstellen, wenn durcharbeitet Jonas weiterleiten --
+- Präregistrierung vorbereiten: COS-Standard verwenden (ausdührlicher als "aspredicted"), Google-File erstellen, wenn durcharbeitet Jonas weiterleiten 
