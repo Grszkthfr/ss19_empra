@@ -35,15 +35,15 @@ statt.
 | 04  |  27\. Mai 2019  |                                                                                                                          |
 | 05  | 03\. Juni 2019  |                                                                                                                          |
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                      |
-|     | 17\. Juni 2019  | Entfällt: Konferenz                                                                                                      |
-| 06  | 24\. Juni 2019  |                                                                                                                          |
-| 07  | 01\. Juli 2019  |                                                                                                                          |
-| 08  | 08\. Juli 2019  |                                                                                                                          |
+| 06  | 17\. Juni 2019  | in Raum 204                                                                                                              |
+| 07  | 24\. Juni 2019  |                                                                                                                          |
+| 08  | 01\. Juli 2019  |                                                                                                                          |
+|     | 08\. Juli 2019  | Entfällt: Konferenz                                                                                                      |
 | 09  | 15\. Juli 2019  |                                                                                                                          |
 | 10  | 22\. Juli 2019  |                                                                                                                          |
 
-letzte Aktualisierung: 20. Mai 2019,
-14:08:34
+letzte Aktualisierung: 27. Mai 2019,
+13:56:39
 
 ### Lizenz
 

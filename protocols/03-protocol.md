@@ -1,32 +1,35 @@
-# Protokol Sitzung 03#
+# Protokol Sitzung 03 #
 
 Sitzungsdatum:20.05.2019
 
 ## Themen ##
-### Review- Affective Eye contact (Jari K. Hietanen)###
-- *Grundaussage*: Blickkontakt hat postive Effekte als sozialer Stimulus 
+### Review- Affective Eye contact (Jari K. Hietanen, 2018) ###
+- *Grundaussage*: Blickkontakt hat postive Effekte als sozialer Stimulus
 
     + primär Vorstellung von Laborstudien
     + verschiedene Maße: sowohl explizit als auch implizit 
     + unterschiedliche Ergebnisse in vorgestellten Studien 
 - Was heißt affektiv? Bewertet, emotional
 
-- stellt Modell auf zu den Wahrnehmungen der Augen 
-    1) Blickkontakt/ Schauen 
-    2) Wahrnehmung der Aufmerksamkeit des Anderen 
-    3) Self-referential processes: Der Glaube, dass der andere merkt dass er/sie beobachtet wird
-    4) Wechselseitige Aufmerksamkeit und Interaktion
---> jeder Einzelne wirkt für sich auf das affektive System 
--->Kognitive Prozesse werden moduliert durch das affektive System: verschiedene Ergebnisse bei expliziten und impliziten Maßen (Konformität, soziale Erwünschtheit) 
+- stellt Modell auf zu den Wahrnehmungen der Augen 1) Blickkontakt/ Schauen 2)
+    Wahrnehmung der Aufmerksamkeit des Anderen 3) Self-referential processes:
+    Der Glaube, dass der andere merkt dass er/sie beobachtet wird 4)
+    Wechselseitige Aufmerksamkeit und Interaktion 
+    
+--> jeder Einzelne wirkt für sich auf das affektive System --> Kognitive Prozesse
+    werden moduliert durch das affektive System: verschiedene Ergebnisse bei
+    expliziten und impliziten Maßen (Konformität, soziale Erwünschtheit)
 
 - *Kontextabhängigkeit*: Der Blick im Kontext zum restlichen Gesichtsausdruck 
     + Unterschied zwischen Blickkontakt nachts alleine auf der Straße oder tagsüber
     + Unterschied ob direkter oder abgewendeter Blick (direct vs averted gaze) 
-    + Autor plädiert dafür, in die Natur zu gehen, den affektiven Blickkontakt zu untersuchen
+    + Autor plädiert dafür, in die Natur zu gehen, den affektiven Blickkontakt
+      zu untersuchen
 
-### Vergleich Review und Paper (The stare as a Stimulus to flight in human subjects, P.C.Ellsworth)###
+### Vergleich Review und Paper (The stare as a Stimulus to flight in human subjects, P.C.Ellsworth, 1972) ###
 - Review(Hietanen) vs empirischer Artikel/Paper (Ellsworth)
-    + Review gibt Einblick in den aktuellen Stand der Forschung zu einem Thema, hier: affektiver         Blickkontakt
+    + Review gibt Einblick in den aktuellen Stand der Forschung zu einem Thema,
+      hier: affektiver Blickkontakt
 - ** 'Affective eye contact' ist nicht gleich 'Stare'**
     + Affective exe contact= muss nicht konstant sein, an kann also mal wegschauen
     + Stare= konstanter Blickkontakt
@@ -34,19 +37,19 @@ Sitzungsdatum:20.05.2019
 
 - Wie wird der Blickkontakt gewertet? 
     + P.C.Ellsworth:  Starren als negativer Stimulus, bedrohend -->löst Fluchtreaktion aus 
-        >signalisiert Dominanz, Machtgehabe
-        > 'Norm violation': Unangenehme Situation, zu der wir kein Verhaltensschema präsent haben
-        >Fluchtverhalten wird in Schnelligkeit gemessen 
+        + signalisiert Dominanz, Machtgehabe
+        + 'Norm violation': Unangenehme Situation, zu der wir kein Verhaltensschema präsent haben
+        + Fluchtverhalten wird in Schnelligkeit gemessen 
     + J.K. Hietanen: Affektiver Blickkontakt als positiver Stimulus
-        >soziale Interaktion, Aufmerksamkeit 
+        + soziale Interaktion, Aufmerksamkeit 
 - weitere Unterschiede
     + Ellsworth: 
-        >definiert klar, was Starren ist-->Anschauen, ohne den Gesichtsausdruck zu verändern
+        + definiert klar, was Starren ist-->Anschauen, ohne den Gesichtsausdruck zu verändern
         (Abgrenzung zum normalen Blickkontakt)
-        >Feldstudie
+        + Feldstudie
     + Hietanen: 
-        >keine klare Definition 
-        >Vergleiche von Laborstudien 
+        + keine klare Definition 
+        + Vergleiche von Laborstudien 
 
 
 ### Papers von Ellsworth ###
@@ -76,7 +79,7 @@ Sitzungsdatum:20.05.2019
 - Frage nach der Relevanz: auch wenn das Ergebnis signifikant ist, ist die Frage nach der Größe des     Effekts 
     >Problem in der Psychologie: viele Ergebnisse sind 'unterpowered', Ergebnis ist eher nahe Zufall
 
-#### Einzelne Punkte der Präregistrierung in der Diskussion####
+#### Einzelne Punkte der Präregistrierung in der Diskussion ####
 -->Siehe auch Word-Dokument zum aktuellen Stand 
 
 zu 2) Messungen in m/s: Standardisierung auf Sekunden,  wir suchen uns Ampeln die gleich breit sind oder verwenden immer dieselbe Ampel
@@ -93,7 +96,7 @@ zu 5) Geschlecht der VP und Blickzeit
 - Blickzeit /Starrzeit
 
 
-####Weitere Punkte, die Wir beachten müssen####
+####Weitere Punkte, die Wir beachten müssen ####
 -  Ethische Komponente -->wir setzen die leute keiner Belastung aus, die alltäglich 
  -->keine Einverständniserklärung einholen
 - Datenschutzkomponente: Randomisierung der Daten

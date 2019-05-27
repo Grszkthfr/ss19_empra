@@ -48,7 +48,7 @@ Thema <- c(
     'Entfällt: Pfingsten',
 
     ### Sitzung 8
-    'Entfällt: Konferenz',
+    'in Raum 204',
 
     ### Sitzung 9
     '',
@@ -57,7 +57,7 @@ Thema <- c(
     '',
 
     ### Sitzung 11: Weihnachten
-    '',
+    'Entfällt: Konferenz',
 
     ### Sitzung 12: Neujahr
     '',
