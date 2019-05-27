@@ -4,8 +4,8 @@ Sitzungsdatum: 27.05.2019
 
 ## Orga ##
 
-17.06. findet statt (R. 204)
-08.07. entfällt
+- 17.06. findet statt (R. 204)
+- 08.07. entfällt
 
 ## Design konkretisieren ##
 
