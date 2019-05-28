@@ -13,13 +13,18 @@ Sitzungsdatum: 27.05.2019
 
 - UV: Blickkontakt ja/nein
 - AV: Geschwindigkeit Straßenüberquerung
-- KV: Geschlecht, geschätzte Alterskategorie, Temperatur °C, Tageszeit (gleich große Kategorien), Wochentag, Dauer des Starrens (von stehen bleiben VP bis Schneiden mit Confed.), Rollenverteilung (Confed, VL), verworfen: Frequentierung der Ampel
+- KV: Geschlecht, geschätzte Alterskategorie, Temperatur °C, Tageszeit (gleich
+  große Kategorien), Wochentag, Dauer des Starrens (von stehen bleiben VP bis
+  Schneiden mit Confed.), Rollenverteilung (Confed, VL), verworfen:
+  Frequentierung der Ampel
 
 ### Einwände ###
 
 - N: Dopplung der VP -> Verlust unabhängigkeit? --> Vernachlässigbar
 - J: Ein Zeitmesser reicht: Kapazitäten sinnvoll einsetzen
-- F: Operationalisierung als Fluchtreflex, Aufnahme der Verhaltensweisen "Ansprechen" und "Stehenbleiben" als Operatoren möglicher Gefahrbewältigungsstrategien --> "A"&"S" Ausschlusskriterien
+- F: Operationalisierung als Fluchtreflex, Aufnahme der Verhaltensweisen
+  "Ansprechen" und "Stehenbleiben" als Operatoren möglicher
+  Gefahrbewältigungsstrategien --> "A"&"S" Ausschlusskriterien
 - N: Extrazeile in Variablenplan für "Unerwartetes/Erwähnenswertes"
 - L: Zeitmessungsstrategie verbesserungswürdig:
 
@@ -50,6 +55,8 @@ Sitzungsdatum: 27.05.2019
 - Poweranalyse vorbereiten
 
 ### Nici, Lena, Franzi ###
-- Ampeln auschecken: mind. 4-Spurig, keine Inseln o.Ä., nicht Nähe Uni (Gefährdung Objektivität), nicht Nähe Bahnhof o.Ä. (Drittvariablen)
+- Ampeln auschecken: mind. 4-Spurig, keine Inseln o.Ä., nicht Nähe Uni
+  (Gefährdung Objektivität), nicht Nähe Bahnhof o.Ä. (Drittvariablen)
 
-- Präregistrierung vorbereiten: COS-Standard verwenden (ausdührlicher als "aspredicted"), Google-File erstellen, wenn durcharbeitet Jonas weiterleiten 
+- Präregistrierung vorbereiten: COS-Standard verwenden (ausdührlicher als
+  "aspredicted"), Google-File erstellen, wenn durcharbeitet Jonas weiterleiten

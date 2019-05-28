@@ -13,10 +13,10 @@ Termin <- c()
 
 ### für jede Sitzung
 for (i in Sitzung){
-    
+
     ### einen Tag hinzufügen, beginnend von der ersten Sitzung
     Tag <- (as.Date("2019-04-29") + (i*7-7)) %>% format("%d. %B %Y")
-    
+
     ### den Tag dem Termin hinzufügen
     Termin <- c(Termin, Tag)
 }
@@ -103,10 +103,10 @@ sitzung_html <-
     ### delete link to other slides in html table
     mutate(
         Thema = ifelse(
-            
+
             # when pattern is found
             str_detect(string=Thema, pattern="Folien"),
-            
+
             # extracts (deletes) everything following the pattern
             str_extract(string=Thema, pattern=".+?(?=, \\[Folien\\])"),
             as.character(Thema))) %>%
