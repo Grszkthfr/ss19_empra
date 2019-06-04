@@ -42,7 +42,7 @@ Thema <- c(
     'Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)',
 
     ### Sitzung 6
-    '',
+    'Power, [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html)',
 
     ### Sitzung 7
     'Entfällt: Pfingsten',
