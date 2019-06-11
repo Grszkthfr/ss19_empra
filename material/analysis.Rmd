@@ -16,8 +16,6 @@ source("../scripts/random_color.R", encoding = "UTF-8")
 
 ```
 
-
-
 ```{r Libraries, warning = FALSE, message = FALSE, results=FALSE}
 
 #Zeugs, dass wir irgendwie benötigen
@@ -31,13 +29,15 @@ N <- 1e4 # festlegen, wie oft (später) zufällig "Proben" entnommen werden, ein
 
 # Ziele
 
-* Herausfinden, was **vernünftige** Vorannahmen sind
-    * Wie schnell gehen Menschen über die Ampel?
-    * Wie viel gehen Menschen schneller wenn sie angestarrt werden
-      (vglb.[Ellsworth et al.,
+* Herausfinden, was **vernünftige** Vorannahmen sind:
+    * Wie lange benötigen Menschen für das überqueren einer Straße?
+    * Wie sehr verkürzt/verlängert sich die Zeit, wenn Menschen dabei angestarrt werden?
+      (vgl..[Ellsworth et al.,
       1972](https://psycnet.apa.org/doi/10.1037/h0032323))?
-* Eine Stichprobenschätzung für die vermutete Effektgröße mit einer akzeptable
-  Power (von .8) für das konventionelle Signifikanzniveau (von .05).
+* Wahrscheinlichkeiten für [Fehler 1. und Fehler 2.
+  Art](https://de.wikipedia.org/wiki/Trennsch%C3%A4rfe_eines_Tests#Entscheidungstabelle)
+  festlegen und/oder herausfinden und abhängig davon eine durchführbare
+  Stichprobengröße finden.
 
 # Vorgehen
 
@@ -58,6 +58,8 @@ N <- 1e4 # festlegen, wie oft (später) zufällig "Proben" entnommen werden, ein
 
 ## 1. Modell aufstellen
 
+Wir stellen ein (vereinfachtes) Modell der Wirklichkeit auf.
+
 Vorannahme: Die `zeit` die Menschen benötigen um eine Ampel zu überqueren
 unterliegt einer
 [Normalverteilung](https://de.wikipedia.org/wiki/Normalverteilung).
@@ -70,7 +72,7 @@ die Standardabweichung `sigma`.
 Da wir nicht sonderlich daran interessiert sind, wie viel Zeit Menschen zur
 Überquerung von Ampeln benötigen müssen wir noch unseren *Prädiktor* das Starren
 hinzufügen: `mu` sollte (laut Hypothese) unterschiedlich sein, je nach dem, ob
-jemand angestarrt wurde, oder nicht.
+jemand angestarrt wird, oder nicht.
 
 ### Parameter
 
@@ -80,10 +82,10 @@ Wir gehen von einem *linearen Einfluss* des Starrens auf `mu` aus.
 
 <!-- Menschen benötigen unterschiedlich lange für das überqueren der Straße, je nach dem, ob sie angestarrt werden, oder nicht. Dabei ist `mu` kleiner (d.h. die Zeit für die Überquerung der Straße ist kürzer), wenn die Menschen zuvor angestarrt wurden -->
 
-Wir nehmen an, dass `mu` sich aus der Summe der **durchschnittlichen Zeit zur
+Wir nehmen an, dass `mu` sich aus der **durchschnittlichen Zeit zur
 Überquerung** (der Straße) und einem **Effekt des Starrens** ergibt.
 
-#### a: durchschnittliche Zeit zur Überquerung
+#### durchschnittliche Zeit zur Überquerung `a`
 
 Auch hier gehen wir davon aus, dass die Werte einer Normalverteilung
 entspringen: `a ~ dnorm(m, sd)`
@@ -93,18 +95,20 @@ entspringen: `a ~ dnorm(m, sd)`
 * sd = Abweichungen, wie **unterschiedlich** lange Menschen benötigen, um die
   Straße zu überqueren.
 
-#### b*x: Effekt des Starrens
+Frage 1: Wie kommen wir an eine gute Schätzung von `m`?
+
+#### Effekt des Starrens `b*x`
 
 Zu `a` müssen wir also noch den Effekt des Starrens addieren, und zwar die
 Veränderung der Zeit durch das Starren: `b * x`
 
-##### x: Starren
+##### Starren `x`
 
 `x` ist von uns als eine dichotome Variable definiert: -1 = **angestarrt
 werden** und 0 = **nicht angestarrt werden**
-*  Frage 1: Warum wohl nicht 1 und 0?
+*  Frage 2: Warum nicht 1 und 0? Was wären die Konsequenzen?
 
-##### b: Veränderung durch Starren
+##### Veränderung durch Starren `b`
 
 Grundsätzlich gehen wir auch hier davon aus, dass die Veränderung durch das
 Starren ("der Effekt") aus einer Normalverteilung kommt. Dadurch, dass wir aber
@@ -112,20 +116,21 @@ ausschließlich positive Effekte erwarten[^2] definieren wir `b` als
 log-normalverteilt (d.h., der Logarithmus von `b` ist normalverteilt): `b ~
 dlnorm(mean, sd)`
 
-[^2]: Achtung, ist abhängig davon, in welche Richtung der Effekt definiert ist!
-    Siehe Frage 1. Hier gehen wir davon aus, dass jemand weniger Zeit benötigt.
+[^2]: Achtung: Das ist natürlich abhängig davon, wie wir den Effekt definieren!
+    Siehe Frage 2. Hier gehen wir davon aus, dass jemand weniger Zeit benötigt.
     Der Term `b * x` sollte entsprechend negativ werden, wenn er zu `a`
-    hinzuaddiert wird. Das ganze kann auch andersherum kodiert werden.
+    hinzuaddiert wird wenn gestarrt wird und keinen Einfluss auf `a` haben, wenn
+    nicht gestarrt wird.
 
 ## 2. Parameter finden
 
-`mu` ergibt sich nun also aus einem *lineare Model* mit dem wir berechnen
-können, wie viel schneller Menschen sind, die angestarrt werden: `mu = a + b *
-x`
+`mu` ergibt sich nun also aus einem *lineare Model* mit dem wir *innerhalb
+unseres Modells* berechnen können, wie viel weniger Zeit Menschen benötigen, die
+angestarrt werden: `mu = a + b * x`
 
-Dabei können wir in das Model realistische Zahlen einsetzen. Beispielsweise,
-dass Menschen zur Überquerung der Straße im Schnitt 12 Sekunden (mit einer SD
-von .4 Sekunden) benötigen.
+Jetzt können wir in das Model möglichst realistische Zahlen einsetzen.
+Beispielsweise, dass Menschen zur Überquerung der Straße im Schnitt 12 Sekunden
+(mit einer SD von .4 Sekunden) benötigen.
 
 ```
 
@@ -139,24 +144,15 @@ b ~ dlnorm( 0 , .02 )
 sigma ~ dunif( 0 , 2 ) # Stanardabweichung
 
 ```
-### Frage
-* Was passiert, wenn starren im o.g. Model *0*, *1* oder *-1* ist?
 
-### Standardisieren rückgängig machen
+### Effekt skalieren
 
 Bisher zeigt der Term `b * x` nur die Veränderung von einer Einheit an. Wie groß
 diese ist, müssen wir uns überlegen, um darauf basierend die nötige
-Stichprobengröße zu bestimmen.
+Stichprobengröße zu bestimmen, s.u..
 
-Um den Effekt in Sekunden zu bekommen, muss `x` mit dem erwarteten Effekt
+Um den Effekt in Sekunden zu berechnen, muss `x` mit dem erwarteten Effekt
 multipliziert werden: Bei einem erwarteten Effekt von 5 Sekunden: `b * x * 5`
-
-### sigma (nicht vergessen)
-
-Menschen laufen von sich aus unterschiedlich schnell, diese Schwankungen können
-durch die breite der Normalverteilung beschrieben werden.
-*  Ein großes `sigma` bedeutet also, dass Menschen sehr unterschiedlich auf
-   angestarrt werden reagieren
 
 ## 3. Plausibilität überprüfen
 
@@ -187,19 +183,14 @@ ggplot() +
 
 ```
 
-#### Frage
-
-* Sind die Werte für `a` plausibel?
-* Was bedeutet die Linie?
+Frage 3: Sind die Werte für `a` plausibel, und was bedeutet die Linie?
 
 ### Plausibilität von `b`
 
 ```{r}
 
 # mittlerer Effekt 'meanlog', variiert um 'sd_log'
-sample_b <- rlnorm( n=N , meanlog=0 , sdlog=.02 ) # log transformieren, eine Möglichkeit
-                                  # sicherzustellen, dass alle Werte positiv
-                                                # sind
+sample_b <- rlnorm( n=N , meanlog=0 , sdlog=.02 )
 
 ggplot() +
     stat_density(
@@ -213,11 +204,7 @@ ggplot() +
 
 ```
 
-#### Frage
-
-* Sind die Werte für `b` plausibel?
-* Was bedeutet die Linie?
-
+Frage 4: Sind die Werte für `b` plausibel?
 
 ### Plausibilität von `mu`
 
@@ -246,7 +233,7 @@ ggplot(data=avg_mu_sim) +
 
 ```
 
-### Plausibilität von `mu`
+### Plausibilität von `sigma`
 
 ```{r}
 
@@ -264,64 +251,93 @@ ggplot() +
 
 ```
 
+folgt
+
+<!--Menschen benötigen von sich aus unterschiedlich viel Zeit beim überqueren der Straße. Diese Varianz kann durch die breite der Normalverteilung beschrieben werden. Ein großes `sigma` bedeutet also, dass Menschen sehr unterschiedlich auf angestarrt werden reagieren -->
+
 ## 4. Stichprobengröße bestimmen
 
 Um die Stichprobengröße zu bestimmen haben wir jetzt alles, was wir benötigen.
 
-Nun können wir uns Daten beliebig oft simulieren und statistisch auswerten.
-Da wir die **Wahrheit** über unser Model kennen (H_1 ist wahr) wissen wir, das
-jeder nicht signifikante Test ein [Fehler 2. Art](https://de.wikipedia.org/wiki/Trennsch%C3%A4rfe_eines_Tests#Entscheidungstabelle) ist.
-* Zur Erinnerung: H_1: Menschen benötigen `r effect_size` Sekunden weniger Zeit die Straße zuüberqueren, wenn sie angestarrt werden),
+Nun können wir uns Daten beliebig oft simulieren und statistisch auswerten. Da
+wir die **Wahrheit** über unser Model kennen (H~1~ ist wahr) wissen wir, das
+jeder nicht signifikante Test ein [Fehler 2.
+Art](https://de.wikipedia.org/wiki/Trennsch%C3%A4rfe_eines_Tests#Entscheidungstabelle)
+ist.
 
+Zuerst legen wir ein paar Parameter für die Simulation fest.
 
-Durch die Simulation können wir entscheiden und rumprobieren, wie konservativ oder liberal wir unsere Hypothesen formulieren wollen, und was das für unsere Stichprobengröße bedeutet.
+* Wie viele Eyperimente wollen wir simulieren?
+* Jede Simulation ist ein Experiment, wie viele Versuchspersonen wollen wir
+  jedesmal erheben?
+* Was ist eine Fehlerquote, die wir akzeptieren würden, fälschlicherweise H~1~
+  anzunehmen (Fehler 1. Art)?
+* Was ist eine Fehlerquote, die wir akzeptieren würden, fälschlicherweise H~0~
+  anzunehmen (Fehler 1. Art)?
+* Wie groß ist der Effekt, den wir erwarten?
 
-```{r simulate one actual observation of subjects, eval=FALSE, include=FALSE }
+Die Antwort zu diesen Fragen hängt von 4 Faktoren ab und kann in jede *Richtung*
+gelöst werden:
 
-# # sr2: 4.63
-# stare_seq <- c(0,1)
-# time_crossing <- sapply( stare_seq , function(stare)
-#     rnorm(
-#         n=20, # per manipulation
-#         mean=sample_a + sample_b*( stare - xbar ) ,
-#         sd=sample_sigma ) )
-#
-# tibble(time_crossing[,1], time_crossing[,2])
-#
-# speed.PI <- apply( speed_sim , 2 , PI , prob=0.89 )
+0. Stichprobengröße
+0. Wahrscheinlichkeit Fehler 1. Art (*Signifikanzniveau*)
+0. Wahrscheinlichkeit Fehler 2. Art (1-*Power*)
+0. Effektgröße
+
+Hier, in der Simulation, lösen wir zum Fehler 2. Art hin auf. Das heißt, dass
+wir festlegen, wie viele Versuchspersonen wir erheben, welche Wahrscheinlichkeit
+wir für den Fehler 1. Art akzeptieren und wie groß der Effekt ist, den wir
+erwarten. Das Ergebniss der Simulation ist die Wahrscheinlichkeit für einen
+Fehler 2. Art, gegeben den 3 Faktoren.
+
+Wenn uns das Ergebnis nicht gefällt, müssen wir unsere Vorausetzungen
+überprüfen.
+
+```{r}
+
+# Anzahl der Simulationen
+nsims <- 100 # hat nur was mit der anzunehmenden Genauigkeit der Power zutun
+
+# 1. Stichprobengröße
+nsubjects <- 40
+
+# 2. Signifikanzniveau
+type_I_error <- .01 # alpha
+
+# 4. Effektgröße
+effect_size <- 1 # to scale x according to effect size
 
 ```
 
+* H~1~: Menschen benötigen `r effect_size` Sekunden weniger Zeit die Straße zu
+  überqueren, wenn sie angestarrt werden), wir legen fest, dass wir in `r
+  type_I_error * 100`% der Fälle H~1~ **fälschlicherweise** akzeptieren und wir
+  legen fest, dass wir `r nsubjects` Versuchspersonen erheben.
+* `nsims`: Für ein Experiment liegt diese quasi bei 1.
+    * Daher wollen wir natürlich eine möglichst hohe Power und strenges
+      Signifikanzniveau haben. Wir möchten aber natürlich nicht so viele
+      Versuchspersonen erheben und dabei muss die Effektstärke auch noch
+      realistisch sein.
+
+Durch die Simulation können wir nun rumprobieren und entscheiden, was das für
+unsere Stichprobengröße bedeutet.
+
 ```{r power calculation}
 
-# Anzahl der Simulationen
-nsims <- 100
-
-# Stichprobengröße
-nsubjects <- 40
-
-# Signifikanzniveau
-alpha <- .01
-
-# Effektgröße
-effect_size <- 1 # to scale x according to effect size
-
-
 # Ein paar Dinge, die wir später benötigen
-df_sim_data <- tibble() # Einen Datensatz für die ganze simulierten Daten
-p_values <- tibble() # Einen Datensatz für die ganzen p-Werte
+df_sim_data <- tibble() # Einen Datensatz für alle simulierten Daten
+p_values <- tibble() # Einen Datensatz für alle p-Werte
 starring <- c(x_0, x_1) # Eine Manipulation, s.o.
 
 for (sim in 1:nsims){
-    
 
     time_crossing <-
         sapply(
           starring ,
           function(stare)
-            
+
             rnorm(
-              
+
                 # Wie viele Versuchspersonen sollen gezogen werden?
                 n = nsubjects/2,
                 # Das lineare Model (s.o.), welches die Zeit abhängig vom Starren vorhersagt
@@ -335,54 +351,71 @@ for (sim in 1:nsims){
           stare=time_crossing[,1],
           no_stare=time_crossing[,2])
 
+    # t-test rechnen
+    sim_ttest <-
+      t.test(
+        sim_data$stare,
+        sim_data$no_stare,
+        conf.level = 1 - type_I_error, # zu 1 - Fehlerrate wird H_1 korrekt angenommen
+        var.equal = TRUE, # per Definition (s.o.)
+        paired = FALSE) # keine Messwiederholung)
+
+    # # oder als lineares model
+    # sim_data_lm <-  gather(
+    #   sim_data, key = "stare", value = "crossing_time", stare:no_stare)
+    #
+    # sim_lm <-
+    #   summary(
+    #     lm(crossing_time ~ 1 + stare, data = sim_data_lm))
+
+    # p-werte sammeln
     sim_p_value <-
         tibble(
           sim_n =sim,
-          p_value = 
-              t.test(
-                sim_data$stare,
-                sim_data$no_stare,
-                conf.level = 1 - alpha, # zu 95% wird H_1 korrekt angenommen 
-                var.equal = TRUE, # per Definition (s.o.)
-                paired = FALSE) # keine Messwiederholung
-                $p.value) # nur den p-Wert behalten
-          # equivalent
+          # p_value = sim_lm$coefficients["starestare", "Pr(>|t|)"],
+          p_value = sim_ttest$p.value, # nur den p-Wert behalten
+          t_value = sim_ttest$statistic,
+          critical_t_value = qt(1-type_I_error/2, sim_ttest$parameter))
 
-    ttest <- t.test(sim_data$stare, sim_data$no_stare)
     df_sim_data <- rbind(df_sim_data, sim_data)
     p_values <- rbind(p_values, sim_p_value)
-    
+
     }
-
-# sim_data2 <-  gather(sim_data, key = "stare", value = "crossing_time", stare:no_stare)
-
 
 ```
 
-# Das Ergebniss
+#### Das Ergebnis
 
-In dem Model legen wir einen Unterschied zwischen *angestarrt* und *nicht angestarrt* auf `r effect_size` Sekunden fest.
+In dem Model legen wir einen Unterschied zwischen *angestarrt* und *nicht
+angestarrt* auf `r effect_size` Sekunden fest, H~1~ **ist** in unserem Model
+wahr.
 
-* Ein perfekter (statistischer) Test findet den unterschied in **100%** aller Fälle.
-* Aufgrund von (zufälligen) Schwankungen (Effektgröße, Varianz), wird der kritische p-Wert aber nicht immer unterboten, auch wenn H_1 wahr ist
-    * Diese Studien sind Abweichungen, die so extrem sind (obwohl H_1 wahr ist), dass in alpha = `r str_c(alpha, " %")` aller Fälle in Kauf genommen wird, fälschlicherweise die H_0 anzunehmen.
-    * Genauso, wie der p-Wert auch manchmal unterboten wird, obwohl H_0 wahr ist, Fehler 1. Art)!
-  
+* Aufgrund von (zufälligen) Schwankungen (bspw. durch Messfehler), wird der
+  kritische p-Wert (`r type_I_error`), nicht immer unterboten.
+    * Genauso, wie der p-Wert auch manchmal unterboten wird, obwohl H~0~ wahr
+      ist, Fehler 1. Art)!
+    * Die Wahrscheinlichkeit versuchen wir anhand der Simulation rauszufinden.
 
-## Wie viele p-Werte sind nicht <.05?
+## Wie viele p-Werte sind nicht <`r type_I_error`?
 
 ```{r}
 
-p_values$below_alpha <- ifelse(p_values$p_value <= alpha, 1, 0)
+p_values$below_alpha <- ifelse(p_values$p_value <= type_I_error, 1, 0)
 
-type_II_error <- sum(p_values$below_alpha)/nrow(p_values)*100
-
+type_II_error <- sum(p_values$below_alpha)/nrow(p_values)
 
 ```
 
-Für unsere Studie, für eine Effektstärke von `r effect_size` Sekunden, bei n = `r nsubjects` Versuchspersonen und einem Signifikanzniveau von `r str_c(alpha *100, " %")` erreichen wir eine Power von `r str_c(type_II_error, " %")`. Das bedeutet, dass bei einem nicht-signifikanten Ergebnis in `r str_c(100 - type_II_error, " %")` aller Fälle ein Fehler 2. Art gemacht (d.h. H_0 wurde angenommen, obwohl H_1 wahr ist) wird.
+Für unsere Studie, für eine Effektstärke von `r effect_size` Sekunden, bei n =
+`r nsubjects` Versuchspersonen und einem Signifikanzniveau von 
+`r type_I_error * 100`% erreichen wir eine Power von 
+`r type_II_error * 100`%.
 
-```{r plot priors}
+Die Wahrscheinlichkeit einen Fehler 2. Art zu begehen, bei einem
+nicht-signifikanten Ergebnis, liegt mit den oben festgelegt Werten bei
+`r (1 - type_II_error) * 100`%!
+
+```{r}
 
 ggplot(data = p_values, aes(x = p_value)) +
     stat_density(
@@ -390,30 +423,33 @@ ggplot(data = p_values, aes(x = p_value)) +
           fill = random_color(),
           alpha = .5) + # anderes alpha!
     geom_vline(
-        xintercept = alpha,
+        xintercept = type_I_error,
         color = random_color())+
     theme_minimal()
 
 ```
 
-
+Frage 5: Was bedeutet das, und ist das akzeptabel?
 
 ```{r}
 
-# 1000 simulierte Studien
-df_sim_data <-
-    df_sim_data %>%
-    group_by(sim_n) %>%
-    summarise(
-        mean_stare = mean(stare),
-        # sd_stare = sd(stare),
-        mean_no_stare = mean(no_stare),
-        # sd_no_stare = sd(no_stare),
-        effect_size = mean_stare - mean_no_stare) %>%
-    cbind(p_values)
-
-DT::datatable(df_sim_data)
+# # 1000 simulierte Studien
+# df_sim_data <-
+#     df_sim_data %>%
+#     group_by(sim_n) %>%
+#     summarise(
+#         mean_stare = mean(stare),
+#         # sd_stare = sd(stare),
+#         mean_no_stare = mean(no_stare),
+#         # sd_no_stare = sd(no_stare),
+#         effect_size = mean_stare - mean_no_stare) %>%
+#     cbind(p_values)
+#
+# DT::datatable(df_sim_data)
 
 ```
 
+### Credit
 
+Inspiriert von McElreath, R. (2018). Statistical rethinking: A Bayesian course
+with examples in R and Stan. Chapman and Hall/CRC, Kapitel 3 [[url]](https://xcelab.net/rm/statistical-rethinking/).

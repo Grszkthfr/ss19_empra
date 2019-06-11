@@ -33,7 +33,7 @@ statt.
 |     |  13\. Mai 2019  | Entfällt: Stiftungsfest                                                                                                  |
 | 03  |  20\. Mai 2019  | Präregistrierung, [Folien](./slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)                           |
 | 04  |  27\. Mai 2019  | Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)                    |
-| 05  | 03\. Juni 2019  | Power, [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html)                                       |
+| 05  | 03\. Juni 2019  | [Power](./material/analysis.html), [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html)           |
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                      |
 | 06  | 17\. Juni 2019  | in Raum 204                                                                                                              |
 | 07  | 24\. Juni 2019  |                                                                                                                          |
@@ -42,8 +42,8 @@ statt.
 | 09  | 15\. Juli 2019  |                                                                                                                          |
 | 10  | 22\. Juli 2019  |                                                                                                                          |
 
-letzte Aktualisierung: 04. Jun 2019,
-08:38:34
+letzte Aktualisierung: 11. Jun 2019,
+10:55:39
 
 ### Lizenz
 
