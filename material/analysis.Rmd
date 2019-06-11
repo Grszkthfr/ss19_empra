@@ -1,7 +1,7 @@
 ---
 title: "Analyse - Empra Sommersemester 2019"
 author: "Jonas Großekathöfer"
-date: "`r format(Sys.time(), '%d\\\\. %B %Y')`"
+date: "letzte Aktualisierung: `r format(Sys.time(), '%d. %B %Y %H:%M')`"
 output: html_document
 
 ---
