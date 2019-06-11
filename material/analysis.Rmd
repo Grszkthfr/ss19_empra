@@ -282,10 +282,10 @@ Zuerst legen wir ein paar Parameter für die Simulation fest.
 Die Antwort zu diesen Fragen hängt von 4 Faktoren ab und kann in jede *Richtung*
 gelöst werden:
 
-0. Stichprobengröße
-0. Wahrscheinlichkeit Fehler 1. Art (*Signifikanzniveau*)
-0. Wahrscheinlichkeit Fehler 2. Art (1-*Power*)
-0. Effektgröße
+1. Stichprobengröße
+2. Wahrscheinlichkeit Fehler 1. Art (*Signifikanzniveau*)
+3. Wahrscheinlichkeit Fehler 2. Art (1-*Power*)
+4. Effektgröße
 
 Hier, in der Simulation, lösen wir zum Fehler 2. Art hin auf. Das heißt, dass
 wir festlegen, wie viele Versuchspersonen wir erheben, welche Wahrscheinlichkeit
