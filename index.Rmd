@@ -30,8 +30,10 @@ der Marcusstraße 9-11, statt.
 
 
 ```{r, include=FALSE}
+
 ### Sitzungen
 source("scripts/dates.R", encoding = "UTF-8")
+
 ```
 
 `r sitzung_md`
