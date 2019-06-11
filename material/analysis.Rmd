@@ -18,7 +18,7 @@ source("../scripts/random_color.R", encoding = "UTF-8")
 
 ```{r Libraries, warning = FALSE, message = FALSE, results=FALSE}
 
-#Zeugs, dass wir irgendwie benötigen
+#Zeugs, das wir irgendwie benötigen
 library(tidyverse)
 library(ggplot2)
 
@@ -41,10 +41,10 @@ N <- 1e4 # festlegen, wie oft (später) zufällig "Proben" entnommen werden, ein
 
 # Vorgehen
 
-1. Ein Modell mit guten Parametern aufstellen, dass realistische Mittelwerte
+1. Ein Modell mit guten Parametern aufstellen, das realistische Mittelwerte
    generiert
 2. Parameter festlegen
-    * Mittelwerten[^1] für reguläre Überquerungszeiten: `a`
+    * Mittelwerte[^1] für reguläre Überquerungszeiten: `a`
         * regulär, im Sinne von "ohne Manipulation"
     * den Effekt, wie stark `starren` die Überquerungszeiten verändert: `b`
 3. Modell auf Plausibilität prüfen, vorzugsweise anhand von Grafiken
@@ -269,20 +269,20 @@ folgt
 Um die Stichprobengröße zu bestimmen haben wir jetzt alles, was wir benötigen.
 
 Nun können wir uns Daten beliebig oft simulieren und statistisch auswerten. Da
-wir die **Wahrheit** über unser Model kennen (H~1~ ist wahr) wissen wir, das
+wir die **Wahrheit** über unser Model kennen (H~1~ ist wahr) wissen wir, dass
 jeder nicht signifikante Test ein [Fehler 2.
 Art](https://de.wikipedia.org/wiki/Trennsch%C3%A4rfe_eines_Tests#Entscheidungstabelle)
 ist.
 
 Zuerst legen wir ein paar Parameter für die Simulation fest.
 
-* Wie viele Eyperimente wollen wir simulieren?
+* Wie viele Experimente wollen wir simulieren?
 * Jede Simulation ist ein Experiment, wie viele Versuchspersonen wollen wir
   jedesmal erheben?
 * Was ist eine Fehlerquote, die wir akzeptieren würden, fälschlicherweise H~1~
   anzunehmen (Fehler 1. Art)?
 * Was ist eine Fehlerquote, die wir akzeptieren würden, fälschlicherweise H~0~
-  anzunehmen (Fehler 1. Art)?
+  anzunehmen (Fehler 2. Art)?
 * Wie groß ist der Effekt, den wir erwarten?
 
 Die Antwort zu diesen Fragen hängt von 4 Faktoren ab und kann in jede *Richtung*
@@ -406,7 +406,7 @@ wahr.
 * Aufgrund von (zufälligen) Schwankungen (bspw. durch Messfehler), wird der
   kritische p-Wert (`r type_I_error`), nicht immer unterboten.
     * Genauso, wie der p-Wert auch manchmal unterboten wird, obwohl H~0~ wahr
-      ist, Fehler 1. Art)!
+      ist, Fehler 1. Art!
     * Die Wahrscheinlichkeit versuchen wir anhand der Simulation rauszufinden.
 
 #### Wie viele p-Werte sind nicht <`r type_I_error`?
