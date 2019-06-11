@@ -116,12 +116,20 @@ ausschließlich positiven Einfluss auf die *Verkürzung* erwarten[^2] definieren
 wir `b` als log-normalverteilt (d.h., der Logarithmus von `b` ist
 normalverteilt): `b ~ dlnorm(mean, sd)`.
 
+<<<<<<< HEAD
 [^2]: Achtung: Das ist natürlich abhängig davon, wie wir den Effekt `x` 
     definieren!
     Siehe Frage 2. Hier gehen wir davon aus, dass jemand weniger Zeit benötigt.
     Der Term `b * x` sollte entsprechend negativ werden, wenn er zu `a`
     hinzuaddiert wird wenn gestarrt wird und keinen Einfluss auf `a` haben, wenn
     nicht gestarrt wird. Das erreichen wir durch die Kodierung `-1:0`.
+=======
+[^2]: Achtung: Das ist natürlich abhängig davon, wie wir den Effekt definieren!
+    Siehe Frage 2. Hier gehen wir davon aus, dass jemand weniger Zeit benötigt.
+    Der Term `b * x` sollte entsprechend negativ werden, wenn er zu `a`
+    hinzuaddiert wird wenn gestarrt wird und keinen Einfluss auf `a` haben, wenn
+    nicht gestarrt wird.
+>>>>>>> 897d8d48d0abbc7912d62d787ad2c2c25007c2ab
 
 ## 2. Parameter finden
 

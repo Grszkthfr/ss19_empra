@@ -41,10 +41,6 @@ statt.
 |     | 08\. Juli 2019  | Entfällt: Konferenz                                                                                                                              |
 | 09  | 15\. Juli 2019  |                                                                                                                                                  |
 | 10  | 22\. Juli 2019  |                                                                                                                                                  |
-
-letzte Aktualisierung: 11. Jun 2019,
-11:40:49
-
 ### Lizenz
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Dieses
