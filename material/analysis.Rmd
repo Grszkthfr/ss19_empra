@@ -105,7 +105,7 @@ Veränderung der Zeit durch das Starren: `b * x`
 
 ##### Starren `x`
 
-`x` ist von uns als eine dichotome Variable definiert: -1 = **angestarrt
+`x` ist von uns als eine dichotome Variable definiert: 1 = **angestarrt
 werden** und 0 = **nicht angestarrt werden**
 
 *  Frage 2: Warum nicht 1 und 0? Was wären die Konsequenzen?
@@ -123,7 +123,7 @@ normalverteilt): `b ~ dlnorm(mean, sd)`.
     Siehe Frage 2. Hier gehen wir davon aus, dass jemand weniger Zeit benötigt.
     Der Term `b * x` sollte entsprechend negativ werden, wenn er zu `a`
     hinzuaddiert wird wenn gestarrt wird und keinen Einfluss auf `a` haben, wenn
-    nicht gestarrt wird. Das erreichen wir durch die Kodierung `-1:0`.
+    nicht gestarrt wird. Das erreichen wir durch die Kodierung `1:0`.
 
 ## 2. Parameter finden
 
@@ -149,6 +149,13 @@ sigma ~ dunif( 0 , 2 ) # Stanardabweichung
 ```
 
 ### Effekt skalieren
+
+```{r}
+
+effect_size <- -1 # 1 Sekunde weniger Zeit
+
+```
+
 
 Bisher zeigt der Term `b * x` nur die Veränderung von einer Einheit an. Wie groß
 diese ist, müssen wir uns überlegen, um darauf basierend die nötige
@@ -215,22 +222,21 @@ Frage 4: Sind die Werte für `b` plausibel?
 
 # Unabhängige Variable
 # x = starren beschleunigt in Sekunden
-# ginge auch standardisiert mit 0 & 1, oder 0.5 & -0.5
 x_0 = 0  # kein starren: kein Effekt
-x_1 = -1 # starren: eine Sekunde schneller, als sonst
+x_1 = 1 # starren: eine Einheit schneller, als sonst
 
 x_bar = mean(c(x_0, x_1))
-x_bar
+# x_bar
 
-mu_1 <- sample_a + sample_b * (x_1 - x_bar) * 1 # den Effekt in Sekunden umrechnen
-mu_0 <- sample_a + sample_b * (x_0 - x_bar) * 1
+mu_1 <- sample_a + sample_b * (x_1 * effect_size) # den Effekt in Sekunden umrechnen
+mu_0 <- sample_a + sample_b * (x_0 * effect_size)
 
 avg_mu_sim <- tibble(sample_a, sample_b, mu_1, mu_0)
 
 ggplot(data=avg_mu_sim) +
     stat_density(aes(x=mu_0), fill = random_color(), alpha = .5) +
     geom_vline(xintercept = mean(mu_0), color = random_color()) +
-    stat_density(aes(x=mu_1), fill = "red", alpha = .5) +
+    stat_density(aes(x=mu_1), fill = random_color(), alpha = .5) +
     geom_vline(xintercept = mean(mu_1), color = random_color())+
     theme_minimal()
 
@@ -296,10 +302,12 @@ Fehler 2. Art, gegeben den 3 Faktoren.
 Wenn uns das Ergebnis nicht gefällt, müssen wir unsere Vorausetzungen
 überprüfen.
 
+### Parameter für die Simulaiton
+
 ```{r}
 
 # Anzahl der Simulationen
-nsims <- 100 # hat nur was mit der anzunehmenden Genauigkeit der Power zutun
+nsims <- 1000 # hat nur was mit der anzunehmenden Genauigkeit der Power zutun
 
 # 1. Stichprobengröße
 nsubjects <- 40
@@ -308,7 +316,7 @@ nsubjects <- 40
 type_I_error <- .01 # alpha
 
 # 4. Effektgröße
-effect_size <- 1 # to scale x according to effect size
+effect_size <- effect_size # oben schon festgelegt
 
 ```
 
@@ -321,6 +329,8 @@ effect_size <- 1 # to scale x according to effect size
       Signifikanzniveau haben. Wir möchten aber natürlich nicht so viele
       Versuchspersonen erheben und dabei muss die Effektstärke auch noch
       realistisch sein.
+
+### Simulaiton
 
 Durch die Simulation können wir nun rumprobieren und entscheiden, was das für
 unsere Stichprobengröße bedeutet.
@@ -344,15 +354,15 @@ for (sim in 1:nsims){
                 # Wie viele Versuchspersonen sollen gezogen werden?
                 n = nsubjects/2,
                 # Das lineare Model (s.o.), welches die Zeit abhängig vom Starren vorhersagt
-                mean = sample_a + sample_b * ( stare - x_bar ) * effect_size ,
+                mean = sample_a + sample_b * stare * effect_size ,
                 # Die Varianz, wie unterschiedlich lange Versuchspersonen brauchen
                 sd = sample_sigma ) )
 
     sim_data <-
         tibble(
           sim_n = sim,
-          stare=time_crossing[,1],
-          no_stare=time_crossing[,2])
+          no_stare=time_crossing[,1],
+          stare=time_crossing[,2])
 
     # t-test rechnen
     sim_ttest <-
@@ -387,7 +397,7 @@ for (sim in 1:nsims){
 
 ```
 
-#### Das Ergebnis
+### Ergebnis
 
 In dem Model legen wir einen Unterschied zwischen *angestarrt* und *nicht
 angestarrt* auf `r effect_size` Sekunden fest, H~1~ **ist** in unserem Model
@@ -399,7 +409,7 @@ wahr.
       ist, Fehler 1. Art)!
     * Die Wahrscheinlichkeit versuchen wir anhand der Simulation rauszufinden.
 
-## Wie viele p-Werte sind nicht <`r type_I_error`?
+#### Wie viele p-Werte sind nicht <`r type_I_error`?
 
 ```{r}
 
@@ -452,7 +462,7 @@ Frage 5: Was bedeutet das, und ist das akzeptabel?
 
 ```
 
-### Credit
+# Credit
 
 Inspiriert von McElreath, R. (2018). Statistical rethinking: A Bayesian course
 with examples in R and Stan. Chapman and Hall/CRC, Kapitel 3 [[url]](https://xcelab.net/rm/statistical-rethinking/).
