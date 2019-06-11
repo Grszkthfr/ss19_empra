@@ -26,24 +26,24 @@ Die Sitzungen finden **Montags**, von **14.15h bis 15.45h**, im **Raum
 213** der Marcusstraße 9-11,
 statt.
 
-| Nr. | Termin          | Thema                                                                                                                                            |
+| Nr. |     Termin      | Thema                                                                                                                                            |
 | :-: | :-------------: | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-|  01 | 29\. April 2019 | Orga, Kennenlernen, Wissenschaft, [Folien](./slides/01-orga.html), [Protokoll](./protocols/01-protocol.html)                                     |
-|  02 | 06\. Mai 2019   | Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html), [Protokoll](./protocols/02-protocol.html)                         |
-|     | 13\. Mai 2019   | Entfällt: Stiftungsfest                                                                                                                          |
-|  03 | 20\. Mai 2019   | Präregistrierung, [Folien](./slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)                                                   |
-|  04 | 27\. Mai 2019   | Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)                                            |
-|  05 | 03\. Juni 2019  | Power (und die dazugehörige [Simulation](./material/analysis.html)), [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html) |
+| 01  | 29\. April 2019 | Orga, Kennenlernen, Wissenschaft, [Folien](./slides/01-orga.html), [Protokoll](./protocols/01-protocol.html)                                     |
+| 02  |  06\. Mai 2019  | Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html), [Protokoll](./protocols/02-protocol.html)                         |
+|     |  13\. Mai 2019  | Entfällt: Stiftungsfest                                                                                                                          |
+| 03  |  20\. Mai 2019  | Präregistrierung, [Folien](./slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)                                                   |
+| 04  |  27\. Mai 2019  | Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)                                            |
+| 05  | 03\. Juni 2019  | Power (und die dazugehörige [Simulation](./material/analysis.html)), [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html) |
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                                              |
-|  06 | 17\. Juni 2019  | in Raum 204                                                                                                                                      |
-|  07 | 24\. Juni 2019  |                                                                                                                                                  |
-|  08 | 01\. Juli 2019  |                                                                                                                                                  |
+| 06  | 17\. Juni 2019  | in Raum 204                                                                                                                                      |
+| 07  | 24\. Juni 2019  |                                                                                                                                                  |
+| 08  | 01\. Juli 2019  |                                                                                                                                                  |
 |     | 08\. Juli 2019  | Entfällt: Konferenz                                                                                                                              |
-|  09 | 15\. Juli 2019  |                                                                                                                                                  |
-|  10 | 22\. Juli 2019  |                                                                                                                                                  |
+| 09  | 15\. Juli 2019  |                                                                                                                                                  |
+| 10  | 22\. Juli 2019  |                                                                                                                                                  |
 
 letzte Aktualisierung: 11. Jun 2019,
-11:44:39
+17:52:33
 
 ### Lizenz
 

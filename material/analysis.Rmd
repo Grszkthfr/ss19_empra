@@ -30,7 +30,7 @@ N <- 1e4 # festlegen, wie oft (später) zufällig "Proben" entnommen werden, ein
 # Ziele
 
 * Herausfinden, was **vernünftige** Vorannahmen sind:
-    * Wie lange benötigen Menschen für das überqueren einer Straße?
+    * Wie lange benötigen Menschen für das Überqueren einer Straße?
     * Wie sehr verkürzt/verlängert sich die Zeit, wenn Menschen dabei angestarrt werden?
       (vgl..[Ellsworth et al.,
       1972](https://psycnet.apa.org/doi/10.1037/h0032323))?
@@ -150,7 +150,7 @@ sigma ~ dunif( 0 , 2 ) # Stanardabweichung
 
 ### Effekt skalieren
 
-```{r}
+```{r effect size}
 
 effect_size <- -1 # 1 Sekunde weniger Zeit
 
@@ -177,7 +177,7 @@ geht's!
 
 ### Plausibilität von `a`
 
-```{r}
+```{r plausibilit a}
 
 # mittlere Überquerungsgeschwindigkeit ist 'mean' und variiert um 'sd'
 sample_a <- rnorm( N , mean=12 , sd=.4 )
@@ -197,7 +197,7 @@ Frage 3: Sind die Werte für `a` plausibel, und was bedeutet die Linie?
 
 ### Plausibilität von `b`
 
-```{r}
+```{r plausibility b}
 
 # mittlerer Effekt 'meanlog', variiert um 'sd_log'
 sample_b <- rlnorm( n=N , meanlog=0 , sdlog=.02 )
@@ -218,14 +218,14 @@ Frage 4: Sind die Werte für `b` plausibel?
 
 ### Plausibilität von `mu`
 
-```{r}
+```{r plausibility mu}
 
 # Unabhängige Variable
 # x = starren beschleunigt in Sekunden
 x_0 = 0  # kein starren: kein Effekt
 x_1 = 1 # starren: eine Einheit schneller, als sonst
 
-x_bar = mean(c(x_0, x_1))
+# x_bar = mean(c(x_0, x_1))
 # x_bar
 
 mu_1 <- sample_a + sample_b * (x_1 * effect_size) # den Effekt in Sekunden umrechnen
@@ -244,7 +244,7 @@ ggplot(data=avg_mu_sim) +
 
 ### Plausibilität von `sigma`
 
-```{r}
+```{r plausibility sigma}
 
 # wird erst später benötigt
 sample_sigma <- runif( n=N , min=0 , max=2) # wird erst später relevant
@@ -278,7 +278,7 @@ Zuerst legen wir ein paar Parameter für die Simulation fest.
 
 * Wie viele Experimente wollen wir simulieren?
 * Jede Simulation ist ein Experiment, wie viele Versuchspersonen wollen wir
-  jedesmal erheben?
+  jedes mal erheben?
 * Was ist eine Fehlerquote, die wir akzeptieren würden, fälschlicherweise H~1~
   anzunehmen (Fehler 1. Art)?
 * Was ist eine Fehlerquote, die wir akzeptieren würden, fälschlicherweise H~0~
@@ -296,18 +296,18 @@ gelöst werden:
 Hier, in der Simulation, lösen wir zum Fehler 2. Art hin auf. Das heißt, dass
 wir festlegen, wie viele Versuchspersonen wir erheben, welche Wahrscheinlichkeit
 wir für den Fehler 1. Art akzeptieren und wie groß der Effekt ist, den wir
-erwarten. Das Ergebniss der Simulation ist die Wahrscheinlichkeit für einen
+erwarten. Das Ergebnis der Simulation ist die Wahrscheinlichkeit für einen
 Fehler 2. Art, gegeben den 3 Faktoren.
 
-Wenn uns das Ergebnis nicht gefällt, müssen wir unsere Vorausetzungen
+Wenn uns das Ergebnis nicht gefällt, müssen wir unsere Voraussetzungen
 überprüfen.
 
-### Parameter für die Simulaiton
+### Parameter für die Simulation
 
-```{r}
+```{r simulation parameter}
 
 # Anzahl der Simulationen
-nsims <- 1000 # hat nur was mit der anzunehmenden Genauigkeit der Power zutun
+nsims <- 10000 # hat nur was mit der anzunehmenden Genauigkeit der Power zutun
 
 # 1. Stichprobengröße
 nsubjects <- 40
@@ -330,12 +330,12 @@ effect_size <- effect_size # oben schon festgelegt
       Versuchspersonen erheben und dabei muss die Effektstärke auch noch
       realistisch sein.
 
-### Simulaiton
+### Simulation
 
 Durch die Simulation können wir nun rumprobieren und entscheiden, was das für
 unsere Stichprobengröße bedeutet.
 
-```{r power calculation}
+```{r power simulation}
 
 # Ein paar Dinge, die wir später benötigen
 df_sim_data <- tibble() # Einen Datensatz für alle simulierten Daten
@@ -407,11 +407,11 @@ wahr.
   kritische p-Wert (`r type_I_error`), nicht immer unterboten.
     * Genauso, wie der p-Wert auch manchmal unterboten wird, obwohl H~0~ wahr
       ist, Fehler 1. Art!
-    * Die Wahrscheinlichkeit versuchen wir anhand der Simulation rauszufinden.
+    * Die Wahrscheinlichkeit versuchen wir anhand der Simulation herauszufinden.
 
 #### Wie viele p-Werte sind nicht <`r type_I_error`?
 
-```{r}
+```{r power calculation}
 
 p_values$below_alpha <- ifelse(p_values$p_value <= type_I_error, 1, 0)
 
