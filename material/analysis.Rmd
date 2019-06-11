@@ -89,6 +89,7 @@ Wir nehmen an, dass `mu` sich aus der **durchschnittlichen Zeit zur
 
 Auch hier gehen wir davon aus, dass die Werte einer Normalverteilung
 entspringen: `a ~ dnorm(m, sd)`
+
 * m = Mittelwert der Zeit die Menschen benötigen um die Straße zu überqueren.
     * quasi der Wert, den wir bekommen würden, wenn wir nur die Zeit nehmen, die
       Menschen benötigen um die Straße zu überqueren.
@@ -106,6 +107,7 @@ Veränderung der Zeit durch das Starren: `b * x`
 
 `x` ist von uns als eine dichotome Variable definiert: -1 = **angestarrt
 werden** und 0 = **nicht angestarrt werden**
+
 *  Frage 2: Warum nicht 1 und 0? Was wären die Konsequenzen?
 
 ##### Veränderung durch Starren `b`
@@ -116,20 +118,12 @@ ausschließlich positiven Einfluss auf die *Verkürzung* erwarten[^2] definieren
 wir `b` als log-normalverteilt (d.h., der Logarithmus von `b` ist
 normalverteilt): `b ~ dlnorm(mean, sd)`.
 
-<<<<<<< HEAD
 [^2]: Achtung: Das ist natürlich abhängig davon, wie wir den Effekt `x` 
     definieren!
     Siehe Frage 2. Hier gehen wir davon aus, dass jemand weniger Zeit benötigt.
     Der Term `b * x` sollte entsprechend negativ werden, wenn er zu `a`
     hinzuaddiert wird wenn gestarrt wird und keinen Einfluss auf `a` haben, wenn
     nicht gestarrt wird. Das erreichen wir durch die Kodierung `-1:0`.
-=======
-[^2]: Achtung: Das ist natürlich abhängig davon, wie wir den Effekt definieren!
-    Siehe Frage 2. Hier gehen wir davon aus, dass jemand weniger Zeit benötigt.
-    Der Term `b * x` sollte entsprechend negativ werden, wenn er zu `a`
-    hinzuaddiert wird wenn gestarrt wird und keinen Einfluss auf `a` haben, wenn
-    nicht gestarrt wird.
->>>>>>> 897d8d48d0abbc7912d62d787ad2c2c25007c2ab
 
 ## 2. Parameter finden
 
@@ -319,9 +313,9 @@ effect_size <- 1 # to scale x according to effect size
 ```
 
 * H~1~: Menschen benötigen `r effect_size` Sekunden weniger Zeit die Straße zu
-  überqueren, wenn sie angestarrt werden), wir legen fest, dass wir in `r
-  type_I_error * 100`% der Fälle H~1~ **fälschlicherweise** akzeptieren und wir
-  legen fest, dass wir `r nsubjects` Versuchspersonen erheben.
+  überqueren, wenn sie angestarrt werden), wir legen fest, dass wir in 
+  `r type_I_error * 100`% der Fälle H~1~ **fälschlicherweise** akzeptieren und
+  wir legen fest, dass wir `r nsubjects` Versuchspersonen erheben.
 * `nsims`: Für ein Experiment liegt diese quasi bei 1.
     * Daher wollen wir natürlich eine möglichst hohe Power und strenges
       Signifikanzniveau haben. Wir möchten aber natürlich nicht so viele
