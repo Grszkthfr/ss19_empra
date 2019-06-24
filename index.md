@@ -15,10 +15,10 @@ Semesters benötigt werden, findet ihr
 [hier](material/account.html).
 
 <img src="https://s3.amazonaws.com/cloud.ohloh.net/attachments/88839/circle_logo_med.png" width="15" height="15" />
-<https://osf.io/9axfe/>{:target="\_blank"}
+[osf.io/9axfe/](https://osf.io/9axfe/){:target="\_blank"}
 
 <img src="https://cdn.cos.io/media/images/prereg-badge.original.png" width="15" height="15" />
-[]()
+[osf.io/4tp97](https://osf.io/4tp97)
 
 [Prüfungsanmeldung](https://www-sbhome1.zv.uni-wuerzburg.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=201046&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung){:target="\_blank"}
 bei Albrecht Sebald (Gruppe 1) nicht vergessen\!
@@ -46,7 +46,7 @@ statt.
 | 10  | 22\. Juli 2019  |                                                                                                                                                  |
 
 letzte Aktualisierung: 24. Jun 2019,
-09:04:13
+15:53:35
 
 ### Lizenz
 
