@@ -17,6 +17,9 @@ Semesters benötigt werden, findet ihr
 <img src="https://s3.amazonaws.com/cloud.ohloh.net/attachments/88839/circle_logo_med.png" width="15" height="15" />
 <https://osf.io/9axfe/>{:target="\_blank"}
 
+<img src="https://cdn.cos.io/media/images/prereg-badge.original.png" width="15" height="15" />
+[]()
+
 [Prüfungsanmeldung](https://www-sbhome1.zv.uni-wuerzburg.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=201046&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung){:target="\_blank"}
 bei Albrecht Sebald (Gruppe 1) nicht vergessen\!
 
@@ -35,15 +38,15 @@ statt.
 | 04  |  27\. Mai 2019  | Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)                                            |
 | 05  | 03\. Juni 2019  | Power (und die dazugehörige [Simulation](./material/analysis.html)), [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html) |
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                                              |
-| 06  | 17\. Juni 2019  | in Raum 204                                                                                                                                      |
+| 06  | 17\. Juni 2019  | Power & Preregistrierung Abschluss, Erhebungsplan, [Protokoll](./protocol/06-protocol.html)                                                      |
 | 07  | 24\. Juni 2019  |                                                                                                                                                  |
 | 08  | 01\. Juli 2019  |                                                                                                                                                  |
 |     | 08\. Juli 2019  | Entfällt: Konferenz                                                                                                                              |
 | 09  | 15\. Juli 2019  |                                                                                                                                                  |
 | 10  | 22\. Juli 2019  |                                                                                                                                                  |
 
-letzte Aktualisierung: 11. Jun 2019,
-17:52:33
+letzte Aktualisierung: 24. Jun 2019,
+08:56:44
 
 ### Lizenz
 
