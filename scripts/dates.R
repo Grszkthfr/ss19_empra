@@ -48,7 +48,7 @@ Thema <- c(
     'Entfällt: Pfingsten',
 
     ### Sitzung 8
-    'Power & Preregistrierung Abschluss, Erhebungsplan, [Protokoll](./protocol/06-protocol.html)',
+    'Power & Preregistrierung Abschluss, Erhebungsplan, [Protokoll](./protocols/06-protocol.html)',
 
     ### Sitzung 9
     '',

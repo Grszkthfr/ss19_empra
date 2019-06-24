@@ -38,7 +38,7 @@ statt.
 | 04  |  27\. Mai 2019  | Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)                                            |
 | 05  | 03\. Juni 2019  | Power (und die dazugehörige [Simulation](./material/analysis.html)), [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html) |
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                                              |
-| 06  | 17\. Juni 2019  | Power & Preregistrierung Abschluss, Erhebungsplan, [Protokoll](./protocol/06-protocol.html)                                                      |
+| 06  | 17\. Juni 2019  | Power & Preregistrierung Abschluss, Erhebungsplan, [Protokoll](./protocols/06-protocol.html)                                                     |
 | 07  | 24\. Juni 2019  |                                                                                                                                                  |
 | 08  | 01\. Juli 2019  |                                                                                                                                                  |
 |     | 08\. Juli 2019  | Entfällt: Konferenz                                                                                                                              |
@@ -46,7 +46,7 @@ statt.
 | 10  | 22\. Juli 2019  |                                                                                                                                                  |
 
 letzte Aktualisierung: 24. Jun 2019,
-08:56:44
+09:04:13
 
 ### Lizenz
 
