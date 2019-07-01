@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Einführung in empirische und experimentelle Forschungsmethoden</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jonas Großekathöfer" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Einführung in empirische und experimentelle Forschungsmethoden
+## Gruppe 08
+### Jonas Großekathöfer
+### 01.07.2019
+
+---
+
+
+
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/68/Gipfel_Piz_mitgel.jpg)
+background-position: 50% 50%
+background-size: 100%
+
+class: inverse, center, middle
+
+## Erhebung
+
+.footnote[[Bildquelle](https://upload.wikimedia.org/wikipedia/commons/6/68/Gipfel_Piz_mitgel.jpg)]
+
+---
+class: inverse, center, middle
+
+## Daten
+
+---
+
+### Best practices
+
+--
+
+#### [FAIR-Prinzip](https://www.nature.com/articles/sdata201618):
+
+**F**indable  
+**A**ccessible  
+**I**nteroperable  
+**R**euseable  
+
+--
+
+#### [tidy data](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf):
+
+1.   Each variable forms a column.
+2.   Each observation forms a row.
+3.   Each type of observational unit forms a table.
+
+---
+
+### Unsere Daten
+
++   FAIR?
++   tidy?
+
+--
+
+![](https://r4ds.had.co.nz/diagrams/data-science-explore.png)
+aus [R4DS](https://r4ds.had.co.nz/)
+
+---
+class: inverse, center, middle
+
+## Analyse
+
+---
+
+### Model
+
+???
+
+Bush: Steuererleichterung Im Durchschnitt 1083\$ p.P., aber ~50% weniger als 100\$. Schiefe Verteilung: Unterste 20%: 6\$ vs oberste 1%: 30.127\$, Median besseres Model als Durchschnitt!
+
+--
+
+![](https://upload.wikimedia.org/wikipedia/commons/1/10/Matchbox_collage.png)
+
+**All Models are wrong**
+--
+
+**, some are usefull** ([Box, 1976](https://en.wikipedia.org/wiki/All_models_are_wrong))
+
+--
+
++   Modelle sind Vereinfachungen
++   statistische Modelle zur *Vereinfachung* der Daten, in dem relevante Merkmale eingefangen werden
+
+.footnote[aus [Statistical Thinking for the 21st Century](http://statsthinking21.org)]
+
+.pull-right[
+.footnote[[Bildquelle](https://upload.wikimedia.org/wikipedia/commons/1/10/Matchbox_collage.png)]]
+
+---
+
+### Prozess der statistischen Modellierung
+
+1.  ~~Specify your question of interest~~
+4.  ~~Determine the appropriate model~~
+2.  ~~Identify or collect the appropriate data~~
+3.  Prepare the data for analysis
+5.  Fit the model to the data
+7.  Test hypothesis and quantify effect size
+
+.footnote[aus [Statistical Thinking for the 21st Century](http://statsthinking21.org/practical-example.html)]
+
+---
+
+background-image: url(http://statsthinking21.org/StatsThinking21_files/figure-html/childHeightLine-1.png)
+background-size: 50%
+
+#### 5. Fit the model to the data
+
+.footnote[aus [Statistical Thinking for the 21st Century](http://statsthinking21.org)]
+
+???
+
+Figure 5.3: Height of children in NHANES, plotted without a model (A), with a linear model including only age (B) or age and a constant (C), and with a linear model that fits separate effects of age for males and females (D).
+
+---
+
+#### 7.  Test hypothesis and quantify effect size
+
+.center[[![](https://www.jamovi.org/assets/header-logo.svg)](https://www.jamovi.org)]
+
+---
+class: inverse, center, middle
+
+# Kommunikation
+
+---
+class: center, middle
+
+![](https://r4ds.had.co.nz/diagrams/data-science-explore.png)
+.footnote[aus [R4DS](https://r4ds.had.co.nz/)]
+
+---
+
+## Poster
+
+### Design
+
++   [Allgemeine Tipps](https://www.rz.uni-wuerzburg.de/dienste/druck/posterdruck/postergestaltung/) und [Anleitung zum Erstellen von geeigneten PDFs](https://www.rz.uni-wuerzburg.de/dienste/druck/posterdruck/pdf-erzeugung/) vom Druckzentrum
++ Din A0
+    + Vorlagen [hier (längs)](../material/poster_a0_breit.pptx) &amp; [hier (hochkant)](../material/poster_a0_lang.pptx)
+
+### Einleitung &amp; Methoden
+
+### Ergebnisse &amp; Diskussion
+
++ nächste Sitzung
+
+---
+class: inverse
+
+## Für übernächste Woche:
+
++ Zu ende erheben
++ Poster soweit wie möglich vorbereiten
+    + Einleitung und Methoden
+    + Design
+
+---
+class: inverse, center, middle
+
+# Noch Fragen?
+
+---
+
+class: inverse, center, middle
+
+<i class="fas  fa-smile fa-5x " style="color:darkslateblue;"></i>
+
+Die Farbe der Woche ist darkslateblue!
+
+--
+
+# Vielen Dank für Eure Aufmerksamkeit!
+
+
+## Bis **über**nächsten Montag.
+
+--
+
+.footnote[
+
+&lt;font size="-2"&gt;Slides created via the R packages
+[**xaringan**](https://github.com/yihui/xaringan) and
+[knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+
+&lt;a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;&lt;img
+alt="Creative Commons Lizenzvertrag" style="border-width:0"
+src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;Dieses
+Werk ist lizenziert unter einer &lt;a rel="license"
+href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons
+Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International
+Lizenz&lt;/a&gt;.&lt;/font size&gt;
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -54,7 +54,7 @@ Thema <- c(
     '',
 
     ### Sitzung 10
-    '',
+    'Datenexploration & -kommunikation, [Folien](./slides/08-analysis.html), [Protokoll](./protocols/08-protocol.html)',
 
     ### Sitzung 11: Weihnachten
     'Entfällt: Konferenz',
