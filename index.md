@@ -40,13 +40,13 @@ statt.
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                                              |
 | 06  | 17\. Juni 2019  | Power & Preregistrierung Abschluss, Erhebungsplan, [Protokoll](./protocols/06-protocol.html)                                                     |
 | 07  | 24\. Juni 2019  |                                                                                                                                                  |
-| 08  | 01\. Juli 2019  |                                                                                                                                                  |
+| 08  | 01\. Juli 2019  | Datenexploration & -kommunikation, [Folien](./slides/08-analysis.html), [Protokoll](./protocols/08-protocol.html)                                |
 |     | 08\. Juli 2019  | Entfällt: Konferenz                                                                                                                              |
 | 09  | 15\. Juli 2019  |                                                                                                                                                  |
 | 10  | 22\. Juli 2019  |                                                                                                                                                  |
 
-letzte Aktualisierung: 24. Jun 2019,
-15:53:35
+letzte Aktualisierung: 01. Jul 2019,
+15:46:31
 
 ### Lizenz
 
