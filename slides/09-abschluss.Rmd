@@ -1,0 +1,163 @@
+---
+title: "Einführung in empirische und experimentelle Forschungsmethoden"
+subtitle: "Gruppe 08"
+author: "Jonas Großekathöfer"
+date: "15.07.2019"
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "my-theme.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      #ratio: "16:9"
+
+---
+class: inverse, center, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(tidyverse)
+#library(kableExtra)
+library(knitr)
+
+### Sitzungen
+source("../scripts/dates.R", encoding = "UTF-8")
+source("../scripts/random_color.R", encoding = "UTF-8")
+farbe_der_woche = random_color()
+
+```
+
+# Heute
+ ---
+
+## (explorative) Analyse
+## Poster
+## Posterkongress
+## Prüfung
+## Hinter den Kulissen
+
+---
+class: center, middle, inverse
+
+## (explorative) Analyse
+
+---
+class: center, middle, inverse
+
+## Poster
+
+---
+
+## Poster
+
+---
+
+## Poster
+
+### Fortschritt
+
+### Zeitplan
+
++   Poster druckfertig: **???**
+
++   Poster bis zur Prüfung abholen
+    +   Öffnungszeiten Druckzentrum: Mo.-Do. 9:00-16:30 Uhr, Fr. 9:00-13:00 Uhr
+
+---
+class: center, middle, inverse
+
+## Posterkongress
+
+---
+
+## Posterkongress
+
+### Organisatorisches
+
++   Getränke?
+
+--
+
++   Snacks
+
+--
+
++   Wo: Lehrstuhl II, Röntgenring 10, Raum 219 
++   Wann: Mittwoch, 24.07.19, 18:00h (voraussichtlich bis 19:30h)
+
+
+---
+class: center, middle, inverse
+
+## Prüfung
+
+---
+
+## Prüfung
+
++   15 Minuten, 10 Minuten Vorstellung der Forschungsarbeit, 5 Minuten offene Fragen
+
+---
+class: inverse, center, middle
+
+## Blick hinter die Kulissen
+
+---
+
+## Blick hinter die Kulissen
+
++   Material gehosted auf [`r icon::fa_github()` github](https://github.com/Grszkthfr/ws18_empra)
+    +   [Empra Material](https://github.com/Grszkthfr/ss19_empra)
+        +   Website
+        +   Skripte
+
++   Projekt (gesammelt) erreichbar über [`r icon::ai_osf()` open science framework](https://osf.io/9axfe/)
+
+
+---
+class: inverse
+
+## Für nächste Woche:
+
++ 
+
+---
+class: inverse, center, middle
+
+# Noch Fragen?
+
+---
+
+class: inverse, center, middle
+
+`r icon::fa_smile(size = 5, color = farbe_der_woche)`
+
+Die Farbe der Woche ist `r farbe_der_woche`!
+
+--
+
+# Vielen Dank für Eure Aufmerksamkeit!
+
+
+## Bis nächsten Montag.
+
+--
+
+.footnote[
+
+<font size="-2">Slides created via the R packages
+[**xaringan**](https://github.com/yihui/xaringan) and
+[knitr](http://yihui.name/knitr), and 
+[R Markdown](https://rmarkdown.rstudio.com).
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img
+alt="Creative Commons Lizenzvertrag" style="border-width:0"
+src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Dieses
+Werk ist lizenziert unter einer <a rel="license"
+href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International
+Lizenz</a>.</font size>
+]

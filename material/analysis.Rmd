@@ -397,7 +397,7 @@ for (sim in 1:nsims){
 
 ```
 
-### Ergebnis
+## Ergebnis (Results)
 
 In dem Model legen wir einen Unterschied zwischen *angestarrt* und *nicht
 angestarrt* auf `r effect_size` Sekunden fest, H~1~ **ist** in unserem Model
@@ -444,25 +444,138 @@ ggplot(data = p_values, aes(x = p_value)) +
 
 Frage 5: Was bedeutet das, und ist das akzeptabel?
 
-```{r}
+# Datenverarbeitung
 
-# # 1000 simulierte Studien
-# df_sim_data <-
-#     df_sim_data %>%
-#     group_by(sim_n) %>%
-#     summarise(
-#         mean_stare = mean(stare),
-#         # sd_stare = sd(stare),
-#         mean_no_stare = mean(no_stare),
-#         # sd_no_stare = sd(no_stare),
-#         effect_size = mean_stare - mean_no_stare) %>%
-#     cbind(p_values)
-#
-# DT::datatable(df_sim_data)
+https://r4ds.had.co.nz/
+
+```{r tidy data}
+
+data <-
+    read_delim(
+        "experiment/experimenter_protocol.csv",
+        delim = "\t",
+        col_types = cols(
+            subject_id = col_double(),
+            time_1 = col_double(),
+            time_2 = col_double(),
+            time_3 = col_double(),
+            time_total = col_double(),
+            stare = col_character(),
+            subject_sex = col_character(),
+            subject_age = col_character(),
+            cast_experimenter = col_character(),
+            cast_confederate = col_character(),
+            temperature = col_double(),
+            weekday = col_character(),
+            daytime = col_character(),
+            remarks = col_character(),
+            exclusion = col_character(),
+            exclusion_reason = col_character()
+            )) %>%
+    mutate_if(is.character, str_trim) %>% 
+    mutate(
+        time_crossing = time_total - time_1 %>% round(2),
+        stare = case_when(
+            stare == 0 ~ "no_stare",
+            stare == 1 ~ "stare") %>% as_factor(),
+        time_staring = case_when(
+            stare == "stare" ~ time_total - time_3)%>% round(2),
+        subject_sex = case_when(
+            subject_sex == "M" ~ "male",
+            subject_sex == "W" ~ "female") %>% as_factor(),
+        weekday = str_to_lower(weekday),
+        daytime = str_to_lower(daytime),
+        exclusion = case_when(
+            is.na(exclusion) ~ "no",
+            exclusion == "Ja" ~ "yes",
+            is.na(time_1) ~ "yes",
+            is.na(time_2) ~ "yes",
+            is.na(time_3) ~ "yes") %>% as_factor()) %>%
+  filter(exclusion != "yes") %>%
+    select(
+        subject_id, stare, time_crossing, time_staring,
+        subject_sex, subject_age,
+        cast_experimenter, cast_confederate,
+        weekday, daytime,
+        exclusion, exclusion_reason)
+
+write.csv(data, "data_complete.csv")
+
+
+```
+
+# Analyse
+
+https://lindeloev.github.io/tests-as-linear/
+
+
+```{r inference}
+
+# # as a t-test
+# ttest <-
+#     t.test(
+#         data[data$stare == "stare",]$time_crossing,
+#         data[data$stare == "no_stare",]$time_crossing,
+#         alternative = "l", # H1: stare < H0: no_stare
+#         conf.level = 1 - type_I_error,
+#         var.equal = TRUE, # per definition
+#         paired = FALSE) # no repeated measuers
+
+# as a linear model
+lm <-
+    # slightly differnt notation of the same linear  model
+    lm(time_crossing ~ 1 + stare, data = data)
+
+critical_t_value = qt(type_I_error, summary(lm)$df[2])
+
+# is F below critical t-value
+sqrt(summary(lm)$fstatistic[1]) < critical_t_value
+
+```
+
+
+
+
+
+## Explorative Analyse
+
+```{r exploration}
+
+data_stare <- data[data$stare=="stare",]
+
+# predicts staring time the crossing time
+lm_ts <-
+    summary(
+    # slightly differnt notation of the same linear  model
+    lm(time_crossing ~ 1 + time_staring, data = data_stare))
+
+# confederate effects?
+lm_cc <-
+    summary(
+    # slightly differnt notation of the same linear  model
+    lm(time_crossing ~ 1 + stare * cast_confederate, data = data))
+
+
+
+
+```
+
+```{r exploration plot}
+
+ggplot(data=data_stare#[data_stare$time_staring < 100,]
+       , aes(x=time_staring, y=time_crossing)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+ggplot(data=data) +
+    stat_density(aes(x=time_crossing, fill=stare), position = position_dodge(), alpha = .5) +
+    theme_minimal() +
+  facet_wrap(~cast_experimenter)
 
 ```
 
 # Credit
 
 Inspiriert von McElreath, R. (2018). Statistical rethinking: A Bayesian course
-with examples in R and Stan. Chapman and Hall/CRC, Kapitel 3 [[url]](https://xcelab.net/rm/statistical-rethinking/).
+with examples in R and Stan. Chapman and Hall/CRC, Kapitel 3
+[[url]](https://xcelab.net/rm/statistical-rethinking/).

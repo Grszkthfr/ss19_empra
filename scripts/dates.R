@@ -32,38 +32,38 @@ Thema <- c(
     ### Sitzung 2
     'Forschungsideen, Versuchsdesign & Hypothesen, [Folien](./slides/02-hypo.html), [Protokoll](./protocols/02-protocol.html)',
 
-    ### Sitzung 3
+    ### Sitzung entfällt
     'Entfällt: Stiftungsfest',
 
-    ### Sitzung 4
+    ### Sitzung 3
     'Präregistrierung, [Folien](./slides/03-prereg.html), [Protokoll](./protocols/03-protocol.html)',
 
-    ### Sitzung 5
+    ### Sitzung 4
     'Design & Präregistrierung, [Folien](./slides/04-prep.html), [Protokoll](./protocols/04-protocol.html)',
 
-    ### Sitzung 6
+    ### Sitzung 5
     'Power (und die dazugehörige [Simulation](./material/analysis.html)), [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html)',
 
-    ### Sitzung 7
+    ### Sitzung entfällt
     'Entfällt: Pfingsten',
 
-    ### Sitzung 8
+    ### Sitzung 6
     'Power & Preregistrierung Abschluss, Erhebungsplan, [Protokoll](./protocols/06-protocol.html)',
 
-    ### Sitzung 9
-    '',
+    ### Sitzung 7
+    'im Feld: Versuchsablauf',
 
-    ### Sitzung 10
+    ### Sitzung 8
     'Datenexploration & -kommunikation, [Folien](./slides/08-analysis.html), [Protokoll](./protocols/08-protocol.html)',
 
-    ### Sitzung 11: Weihnachten
+    ### Sitzung entfällt
     'Entfällt: Konferenz',
 
-    ### Sitzung 12: Neujahr
-    '',
+    ### Sitzung 9
+    'Poster, [Folien](./slides/09-abschluss.html), [Protokoll](./protocols/09-protocol.html)',
 
     ### Sitzung 13
-    '')
+    'Posterkongress (18.00h, R. 219, Röntgenring 10)')
 
 ### Nr. Termin Thema in einer Tabelle
 Sitzungen <- data.frame(Sitzung, Termin, Thema) %>%
