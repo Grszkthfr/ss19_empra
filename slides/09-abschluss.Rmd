@@ -109,7 +109,7 @@ class: inverse, center, middle
 
 ## Blick hinter die Kulissen
 
-+   Material gehosted auf [`r icon::fa_github()` github](https://github.com/Grszkthfr/ws18_empra)
++   Material gehosted auf [`r icon::fa_github()` github](https://github.com/Grszkthfr/ss19_empra)
     +   [Empra Material](https://github.com/Grszkthfr/ss19_empra)
         +   Website
         +   Skripte
