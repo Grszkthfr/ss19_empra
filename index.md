@@ -39,14 +39,14 @@ statt.
 | 05  | 03\. Juni 2019  | Power (und die dazugehörige [Simulation](./material/analysis.html)), [Folien](./slides/05-power.html), [Protokoll](./protocols/05-protocol.html) |
 |     | 10\. Juni 2019  | Entfällt: Pfingsten                                                                                                                              |
 | 06  | 17\. Juni 2019  | Power & Preregistrierung Abschluss, Erhebungsplan, [Protokoll](./protocols/06-protocol.html)                                                     |
-| 07  | 24\. Juni 2019  |                                                                                                                                                  |
+| 07  | 24\. Juni 2019  | im Feld: Versuchsablauf                                                                                                                          |
 | 08  | 01\. Juli 2019  | Datenexploration & -kommunikation, [Folien](./slides/08-analysis.html), [Protokoll](./protocols/08-protocol.html)                                |
 |     | 08\. Juli 2019  | Entfällt: Konferenz                                                                                                                              |
-| 09  | 15\. Juli 2019  |                                                                                                                                                  |
-| 10  | 22\. Juli 2019  |                                                                                                                                                  |
+| 09  | 15\. Juli 2019  | Poster, [Folien](./slides/09-abschluss.html), [Protokoll](./protocols/09-protocol.html)                                                          |
+| 10  | 22\. Juli 2019  | Posterkongress (18.00h, R. 219, Röntgenring 10)                                                                                                  |
 
-letzte Aktualisierung: 01. Jul 2019,
-15:46:31
+letzte Aktualisierung: 15. Jul 2019,
+13:40:58
 
 ### Lizenz
 
